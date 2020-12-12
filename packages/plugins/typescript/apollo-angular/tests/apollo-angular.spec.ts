@@ -14,7 +14,7 @@ describe('Apollo Angular', () => {
         id
         commentCount
         repository {
-          full_name
+          example #full_name
           html_url
           owner {
             avatar_url

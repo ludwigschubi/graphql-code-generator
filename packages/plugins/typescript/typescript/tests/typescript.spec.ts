@@ -114,6 +114,7 @@ describe('TypeScript', () => {
         "this is c"
         type C {
           id: ID
+          example#name: String
         }
       `);
       const result = await plugin(schema, [], {}, { outputFile: '' });
@@ -2488,7 +2489,7 @@ describe('TypeScript', () => {
     const schema = buildSchema(/* GraphQL */ `
       type User {
         id: Int!
-        name: String!
+        foaf#name: String!
         email: String!
       }
 
@@ -2513,7 +2514,6 @@ describe('TypeScript', () => {
     const content = await plugin(schema, [], {}, { outputFile: '' });
 
     expect(content).not.toContainEqual('[object Object]');
-
     validateTs(content);
   });
 

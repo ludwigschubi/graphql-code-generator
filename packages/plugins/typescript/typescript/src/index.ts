@@ -50,7 +50,6 @@ export function includeIntrospectionDefinitions(
   const documentsVisitor = visitWithTypeInfo(typeInfo, {
     Field() {
       const type = getNamedType(typeInfo.getType());
-
       if (isIntrospectionType(type) && !usedTypes.includes(type)) {
         usedTypes.push(type);
       }

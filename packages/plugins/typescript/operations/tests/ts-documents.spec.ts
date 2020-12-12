@@ -20,7 +20,7 @@ describe('TypeScript Operations Plugin', () => {
 
     type Profile {
       age: Int
-      firstName: String!
+      foaf#firstName: String!
     }
 
     type Mutation {
@@ -1165,13 +1165,13 @@ describe('TypeScript Operations Plugin', () => {
       `);
       await validate(content, config);
     });
-    it('should mark __typename as non optional in case it is included in the selection set of an union field', async () => {
+    it.only('should mark __typename as non optional in case it is included in the selection set of an union field', async () => {
       const ast = parse(/* GraphQL */ `
         query unionTest {
           unionTest {
             __typename
             ... on Profile {
-              firstName
+              foaf #firstName
             }
             ... on User {
               email
@@ -1184,15 +1184,19 @@ describe('TypeScript Operations Plugin', () => {
         outputFile: '',
       });
       expect(content).toBeSimilarStringTo(`
-      { __typename?: 'Query' }
-      & { unionTest?: Maybe<(
-        { __typename: 'User' }
-        & Pick<User, 'email'>
-      ) | (
-        { __typename: 'Profile' }
-        & Pick<Profile, 'firstName'>
-      )> }
-    );
+      export type UnionTestQueryVariables = Exact<{ [key: string]: never; }>;
+
+      
+      export type UnionTestQuery = (
+        { __typename?: 'Query' }
+        & { unionTest?: Maybe<(
+          { __typename: 'User' }
+          & Pick<User, 'email'>
+        ) | (
+          { __typename: 'Profile' }
+          & { firstName: Profile['foaf#firstName'] }
+        )> }
+      );
       `);
       await validate(content, config);
     });

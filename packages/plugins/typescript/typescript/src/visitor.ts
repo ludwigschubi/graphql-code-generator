@@ -143,9 +143,11 @@ export class TsVisitor<
     return (
       comment +
       indent(
-        `${this.config.immutableTypes ? 'readonly ' : ''}${node.name}${
-          addOptionalSign ? '?' : ''
-        }: ${typeString}${this.getPunctuation(type)}`
+        `${this.config.immutableTypes ? 'readonly ' : ''}${
+          typeof node.name === 'string' && ((node.name as unknown) as string).includes('#')
+            ? "'" + node.name + "'"
+            : node.name
+        }${addOptionalSign ? '?' : ''}: ${typeString}${this.getPunctuation(type)}`
       )
     );
   }

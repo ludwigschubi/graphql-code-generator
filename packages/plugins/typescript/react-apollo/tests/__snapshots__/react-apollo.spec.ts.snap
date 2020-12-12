@@ -82,7 +82,7 @@ export type Repository = {
   /** Just the name of the repository, e.g. GitHunt-API */
   name: Scalars['String'];
   /** The full name of the repository with the username, e.g. apollostack/GitHunt-API */
-  full_name: Scalars['String'];
+  'example#full_name': Scalars['String'];
   /** The description of the repository */
   description?: Maybe<Scalars['String']>;
   /** The link to the repository on GitHub */
@@ -271,7 +271,7 @@ export type GQLRepository = {
   /** Just the name of the repository, e.g. GitHunt-API */
   name: Scalars['String'];
   /** The full name of the repository with the username, e.g. apollostack/GitHunt-API */
-  full_name: Scalars['String'];
+  'example#full_name': Scalars['String'];
   /** The description of the repository */
   description?: Maybe<Scalars['String']>;
   /** The link to the repository on GitHub */
@@ -460,7 +460,7 @@ export type Repository = {
   /** Just the name of the repository, e.g. GitHunt-API */
   name: Scalars['String'];
   /** The full name of the repository with the username, e.g. apollostack/GitHunt-API */
-  full_name: Scalars['String'];
+  'example#full_name': Scalars['String'];
   /** The description of the repository */
   description?: Maybe<Scalars['String']>;
   /** The link to the repository on GitHub */
@@ -649,7 +649,7 @@ export type Repository = {
   /** Just the name of the repository, e.g. GitHunt-API */
   name: Scalars['String'];
   /** The full name of the repository with the username, e.g. apollostack/GitHunt-API */
-  full_name: Scalars['String'];
+  'example#full_name': Scalars['String'];
   /** The description of the repository */
   description?: Maybe<Scalars['String']>;
   /** The link to the repository on GitHub */

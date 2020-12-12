@@ -75,7 +75,7 @@ describe('React Apollo', () => {
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -143,7 +143,7 @@ describe('React Apollo', () => {
             }
 
             fragment RepoFields on Repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -288,7 +288,7 @@ describe('React Apollo', () => {
             }
 
             fragment RepositoryFields on Repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -543,7 +543,7 @@ describe('React Apollo', () => {
           location: 'a.graphql',
           document: parse(/* GraphQL */ `
             fragment MyFragment on Repository {
-              full_name
+              example #full_name
             }
 
             query {
@@ -559,7 +559,7 @@ describe('React Apollo', () => {
       expect(result.content).toBeSimilarStringTo(`
       export const MyFragmentFragmentDoc = gql\`
       fragment MyFragment on Repository {
-        full_name
+        full_name: example#full_name
       }
       \`;`);
       await validateTypeScript(result, schema, docs, {});
@@ -568,7 +568,7 @@ describe('React Apollo', () => {
     it('should generate Document variables for inline fragments', async () => {
       const repositoryWithOwner = gql`
         fragment RepositoryWithOwner on Repository {
-          full_name
+          example #full_name
           html_url
           owner {
             avatar_url
@@ -618,7 +618,7 @@ fragment FeedWithRepository on Entry {
 \${RepositoryWithOwnerFragmentDoc}\`;`);
       expect(content.content).toBeSimilarStringTo(`export const RepositoryWithOwnerFragmentDoc = gql\`
 fragment RepositoryWithOwner on Repository {
-  full_name
+  full_name: example#full_name
   html_url
   owner {
     avatar_url
@@ -693,7 +693,7 @@ query MyFeed {
         }
 
         fragment RepositoryWithOwner on Repository {
-          full_name
+          example #full_name
         }
 
         query MyFeed {
@@ -739,7 +739,7 @@ query MyFeed {
               id
               commentCount
               repository {
-                full_name
+                full_name: example#full_name
                 html_url
                 owner {
                   avatar_url
@@ -1081,7 +1081,7 @@ query MyFeed {
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -1126,7 +1126,7 @@ export function useSubmitRepositoryMutation(baseOptions?: Apollo.MutationHookOpt
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -1231,7 +1231,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -1515,7 +1515,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -1690,7 +1690,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
           id
           commentCount
           repository {
-            full_name
+            example #full_name
             html_url
             owner {
               avatar_url
@@ -2335,7 +2335,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
       await validateTypeScript(content, schema, docs, {});
     });
 
-    it.only('should import Operations from near operation file for withQuery', async () => {
+    it('should import Operations from near operation file for withQuery', async () => {
       const config: ReactApolloRawPluginConfig = {
         documentMode: DocumentMode.external,
         importDocumentNodeExternallyFrom: 'near-operation-file',

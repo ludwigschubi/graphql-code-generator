@@ -27,7 +27,7 @@ describe('Vue Apollo', () => {
         id
         commentCount
         repository {
-          full_name
+          example #full_name
           html_url
           owner {
             avatar_url
@@ -213,7 +213,7 @@ describe('Vue Apollo', () => {
           location: 'a.graphql',
           document: parse(/* GraphQL */ `
             fragment MyFragment on Repository {
-              full_name
+              example #full_name
             }
 
             query {
@@ -229,7 +229,7 @@ describe('Vue Apollo', () => {
       expect(result.content).toBeSimilarStringTo(`
       export const MyFragmentFragmentDoc = gql\`
       fragment MyFragment on Repository {
-        full_name
+        full_name: example#full_name
       }
       \`;`);
       await validateTypeScript(result, schema, docs, {});
@@ -238,7 +238,7 @@ describe('Vue Apollo', () => {
     it('should generate Document variables for inline fragments', async () => {
       const repositoryWithOwner = gql`
         fragment RepositoryWithOwner on Repository {
-          full_name
+          example #full_name
           html_url
           owner {
             avatar_url
@@ -288,7 +288,7 @@ fragment FeedWithRepository on Entry {
 \${RepositoryWithOwnerFragmentDoc}\`;`);
       expect(content.content).toBeSimilarStringTo(`export const RepositoryWithOwnerFragmentDoc = gql\`
 fragment RepositoryWithOwner on Repository {
-  full_name
+  full_name: example#full_name
   html_url
   owner {
     avatar_url
@@ -363,7 +363,7 @@ query MyFeed {
         }
 
         fragment RepositoryWithOwner on Repository {
-          full_name
+          example #full_name
         }
 
         query MyFeed {
@@ -398,7 +398,7 @@ query MyFeed {
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -444,7 +444,7 @@ query MyFeed {
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -548,7 +548,7 @@ query MyFeed {
             id
             commentCount
             repository {
-              full_name
+              example #full_name
               html_url
               owner {
                 avatar_url
@@ -855,7 +855,7 @@ query MyFeed {
           id
           commentCount
           repository {
-            full_name
+            example #full_name
             html_url
             owner {
               avatar_url

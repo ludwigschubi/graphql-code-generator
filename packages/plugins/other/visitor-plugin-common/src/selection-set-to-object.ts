@@ -272,7 +272,6 @@ export class SelectionSetToObject<Config extends ParsedDocumentsConfig = ParsedD
     }
 
     const selectionNodesByTypeName = this.flattenSelectionSet(this._selectionSet.selections);
-
     const grouped = getPossibleTypes(this._schema, this._parentSchemaType).reduce((prev, type) => {
       const typeName = type.name;
       const schemaType = this._schema.getType(typeName);
