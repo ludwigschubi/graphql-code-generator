@@ -27,7 +27,7 @@ describe('React Apollo', () => {
         id
         commentCount
         repository {
-          full_name
+          example #full_name
           html_url
           owner {
             avatar_url
@@ -2335,7 +2335,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
       await validateTypeScript(content, schema, docs, {});
     });
 
-    it('should import Operations from near operation file for withQuery', async () => {
+    it.only('should import Operations from near operation file for withQuery', async () => {
       const config: ReactApolloRawPluginConfig = {
         documentMode: DocumentMode.external,
         importDocumentNodeExternallyFrom: 'near-operation-file',

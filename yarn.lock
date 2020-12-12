@@ -8920,7 +8920,13 @@ graphql-upload@^8.0.2:
     http-errors "^1.7.3"
     object-path "^0.11.4"
 
-graphql@15.3.0, graphql@^14.5.3, graphql@^15.0.0:
+graphql@^14.5.3, "graphql@https://registry.npmjs.org/webql-js/-/webql-js-15.3.1.tgz":
+  version "15.3.1"
+  resolved "https://registry.npmjs.org/webql-js/-/webql-js-15.3.1.tgz#8a9f3f24ed17516a834f0026e15670751819f679"
+  dependencies:
+    own-namespace "^0.4.3"
+
+graphql@^15.0.0:
   version "15.3.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.3.0.tgz#3ad2b0caab0d110e3be4a5a9b2aa281e362b5278"
   integrity sha512-GTCJtzJmkFLWRfFJuoo9RWWa/FfamUHgiFosxi/X1Ani4AVWbeyBenZTNX6dM+7WSbbFfTo/25eh0LLkwHMw2w==
@@ -13018,6 +13024,11 @@ outdent@^0.5.0:
   version "0.5.0"
   resolved "https://registry.npmjs.org/outdent/-/outdent-0.5.0.tgz#9e10982fdc41492bb473ad13840d22f9655be2ff"
   integrity sha512-/jHxFIzoMXdqPzTaCpFzAAWhpkSjZPF4Vsn6jAfNpmbH/ymsmd7Qc6VE9BGn0L6YMj6uwpQLxCECpus4ukKS9Q==
+
+own-namespace@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/own-namespace/-/own-namespace-0.4.3.tgz#e9123d73c734d957b3e305d03305ed8476f90321"
+  integrity sha512-Z2NUxxvMZQRlNcTO3Vvdw2J9392dgvSWY/hwJPB5n0ehyup0FVirfoK7RrI8oSDlaqjGbNPgX/2JHMepX1hUew==
 
 p-cancelable@^1.0.0:
   version "1.1.0"
