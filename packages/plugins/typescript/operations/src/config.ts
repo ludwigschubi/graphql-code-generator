@@ -1,4 +1,4 @@
-import { RawDocumentsConfig, AvoidOptionalsConfig } from '@graphql-codegen/visitor-plugin-common';
+import { RawDocumentsConfig, AvoidOptionalsConfig } from 'webql-codegen-visitor-plugin-common';
 
 /**
  * @description This plugin generates TypeScript types based on your GraphQLSchema *and* your GraphQL operations and fragments.
@@ -102,14 +102,14 @@ export interface TypeScriptDocumentsPluginConfig extends RawDocumentsConfig {
    * generates:
    * ./typings/api.ts:
    *   plugins:
-   *     - '@graphql-codegen/typescript'
+   *     - 'webql-codegen-typescript'
    * ./:
    *   preset: near-operation-file
    *   presetConfig:
    *     baseTypesPath: ./typings/api.ts
    *     extension: .gql.d.ts
    *   plugins:
-   *     - '@graphql-codegen/typescript-operations'
+   *     - 'webql-codegen-typescript-operations'
    *   config:
    *     addOperationExport: true
    * ```

@@ -11,7 +11,7 @@ This plugin generates:
 - a React Apollo HOC running an ApolloClient query consuming the InMemory cache
 - an interface for the React component wrapped by the HOC
 
-It extends the basic TypeScript plugins: `@graphql-codegen/typescript`, `@graphql-codegen/typescript-operations` - and thus shares a similar configuration.
+It extends the basic TypeScript plugins: `webql-codegen-typescript`, `webql-codegen-typescript-operations` - and thus shares a similar configuration.
 
 
 

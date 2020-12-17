@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { resolve, relative } from 'path';
 import { writeFileSync, readFileSync } from 'fs';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import detectIndent from 'detect-indent';
 import { Answers } from './types';
 import getLatestVersion from 'latest-version';
@@ -52,10 +52,10 @@ export async function writePackage(answers: Answers, configLocation: string) {
   );
 
   if (answers.introspection) {
-    pkg.devDependencies['@graphql-codegen/introspection'] = await getLatestVersion('@graphql-codegen/introspection');
+    pkg.devDependencies['webql-codegen-introspection'] = await getLatestVersion('webql-codegen-introspection');
   }
 
-  pkg.devDependencies['@graphql-codegen/cli'] = await getLatestVersion('@graphql-codegen/cli');
+  pkg.devDependencies['webql-codegen-cli'] = await getLatestVersion('webql-codegen-cli');
 
   writeFileSync(pkgPath, JSON.stringify(pkg, null, indent));
 }

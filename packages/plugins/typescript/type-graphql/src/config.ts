@@ -1,5 +1,5 @@
 import { DecoratorConfig } from './visitor';
-import { TypeScriptPluginConfig } from '@graphql-codegen/typescript';
+import { TypeScriptPluginConfig } from 'webql-codegen-typescript';
 
 export interface TypeGraphQLPluginConfig extends TypeScriptPluginConfig {
   /**

@@ -1,4 +1,4 @@
-# @graphql-codegen/cli
+# webql-codegen-cli
 
 ## 1.18.0
 
@@ -23,7 +23,7 @@
 - e7d56e32: fix issues with init command and missing versions
 - 398b094b: Load user provided things relative to the config
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 1.17.8
 
@@ -34,5 +34,5 @@
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
 - Updated dependencies [ac067ea0]
-  - @graphql-codegen/core@1.17.8
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-core@1.17.8
+  - webql-codegen-plugin-helpers@1.17.8

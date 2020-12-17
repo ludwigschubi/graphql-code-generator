@@ -6,14 +6,14 @@
 
 - Updated dependencies [ceb9fe0c]
 - Updated dependencies [186962c9]
-  - @graphql-codegen/cli@1.18.0
+  - webql-codegen-cli@1.18.0
 
 ## 1.17.10
 
 ### Patch Changes
 
 - Updated dependencies [2900ee29]
-  - @graphql-codegen/cli@1.17.10
+  - webql-codegen-cli@1.17.10
 
 ## 1.17.9
 
@@ -21,7 +21,7 @@
 
 - Updated dependencies [e7d56e32]
 - Updated dependencies [398b094b]
-  - @graphql-codegen/cli@1.17.9
+  - webql-codegen-cli@1.17.9
 
 ## 1.17.8
 
@@ -31,4 +31,4 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/cli@1.17.8
+  - webql-codegen-cli@1.17.8

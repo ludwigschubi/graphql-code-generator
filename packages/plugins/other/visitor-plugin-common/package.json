@@ -1,5 +1,5 @@
 {
-  "name": "@graphql-codegen/visitor-plugin-common",
+  "name": "webql-codegen-visitor-plugin-common",
   "version": "1.17.16",
   "license": "MIT",
   "repository": {
@@ -13,7 +13,7 @@
     "prepack": "bob prepack"
   },
   "dependencies": {
-    "@graphql-codegen/plugin-helpers": "^1.17.9",
+    "webql-codegen-plugin-helpers": "^1.17.9",
     "@graphql-tools/relay-operation-optimizer": "^6",
     "array.prototype.flatmap": "^1.2.3",
     "auto-bind": "~4.0.0",

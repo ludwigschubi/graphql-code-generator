@@ -10,7 +10,7 @@ module.exports = ({ dirname, projectMode = true }) => {
   const pkg = require(resolve(dirname, 'package.json'));
 
   return {
-    ...(CI || !projectMode ? {} : { displayName: pkg.name.replace('@graphql-codegen/', '') }),
+    ...(CI || !projectMode ? {} : { displayName: pkg.name.replace('webql-codegen-', '') }),
     transform: { '^.+\\.tsx?$': 'ts-jest' },
     testEnvironment: 'node',
     rootDir: dirname,

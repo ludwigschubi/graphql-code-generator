@@ -6,7 +6,7 @@ import {
   indentMultiline,
   getBaseTypeNode,
   buildScalars,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import autoBind from 'auto-bind';
 import {
   OperationDefinitionNode,
@@ -18,7 +18,7 @@ import {
   isScalarType,
 } from 'graphql';
 import { CSharpOperationsRawPluginConfig } from './config';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import { getListInnerTypeNode, C_SHARP_SCALARS, getListTypeField, getListTypeDepth } from '../../common/common';
 
 const defaultSuffix = 'GQL';

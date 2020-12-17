@@ -1,8 +1,8 @@
-import { validateTs } from '@graphql-codegen/testing';
+import { validateTs } from 'webql-codegen-testing';
 import { parse, buildClientSchema, buildSchema } from 'graphql';
 import { plugin } from '../src/index';
 import { plugin as tsPlugin } from '../../typescript/src';
-import { mergeOutputs, Types } from '@graphql-codegen/plugin-helpers';
+import { mergeOutputs, Types } from 'webql-codegen-plugin-helpers';
 
 describe('TypeScript Operations Plugin', () => {
   const gitHuntSchema = buildClientSchema(require('../../../../../dev-test/githunt/schema.json'));
@@ -20,7 +20,7 @@ describe('TypeScript Operations Plugin', () => {
 
     type Profile {
       age: Int
-      foaf#firstName: String!
+      example#firstName: String!
     }
 
     type Mutation {
@@ -1171,7 +1171,7 @@ describe('TypeScript Operations Plugin', () => {
           unionTest {
             __typename
             ... on Profile {
-              foaf #firstName
+              example #firstName
             }
             ... on User {
               email
@@ -1194,7 +1194,7 @@ describe('TypeScript Operations Plugin', () => {
           & Pick<User, 'email'>
         ) | (
           { __typename: 'Profile' }
-          & { firstName: Profile['foaf#firstName'] }
+          & { firstName: Profile['example#firstName'] }
         )> }
       );
       `);

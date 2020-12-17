@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-apollo-angular
+# webql-codegen-typescript-apollo-angular
 
 ## 2.0.1
 
@@ -9,8 +9,8 @@
 - ac067ea0: Improve output by using gql tag from apollo-angular package, when apollo-angular@v2 is used
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8
 
 ## 2.0.0
 
@@ -37,4 +37,4 @@
 
 - b9113daf: Fix Dependency Injection issue in Apollo Angular when targeting ES5
 - Updated dependencies [4266a15f]
-  - @graphql-codegen/visitor-plugin-common@1.17.12
+  - webql-codegen-visitor-plugin-common@1.17.12

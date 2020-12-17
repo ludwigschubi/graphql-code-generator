@@ -1,7 +1,7 @@
 import { BaseJavaVisitor, SCALAR_TO_WRITER_METHOD } from './base-java-visitor';
-import { indent, indentMultiline, LoadedFragment, getBaseTypeNode } from '@graphql-codegen/visitor-plugin-common';
-import { buildPackageNameFromPath, JavaDeclarationBlock } from '@graphql-codegen/java-common';
-import { getBaseType } from '@graphql-codegen/plugin-helpers';
+import { indent, indentMultiline, LoadedFragment, getBaseTypeNode } from 'webql-codegen-visitor-plugin-common';
+import { buildPackageNameFromPath, JavaDeclarationBlock } from 'webql-codegen-java-common';
+import { getBaseType } from 'webql-codegen-plugin-helpers';
 import {
   GraphQLSchema,
   OperationDefinitionNode,
@@ -1047,7 +1047,9 @@ ${indentMultiline(inner, 2)}
     cls.addClassMethod(
       'operationId',
       `String`,
-      `return "${createHash('md5').update(printed).digest('hex')}";`,
+      `return "${createHash('md5')
+        .update(printed)
+        .digest('hex')}";`,
       [],
       [],
       'public',

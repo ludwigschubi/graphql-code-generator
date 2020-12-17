@@ -53,7 +53,7 @@ Please make sure the Codegen and plugins version under `package.json` matches yo
 **Environment:**
 
 - OS: 
-- `@graphql-codegen/...`: 
+- `webql-codegen-...`: 
 - NodeJS: 
 
 **Additional context**

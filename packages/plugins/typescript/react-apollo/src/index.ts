@@ -1,6 +1,6 @@
-import { Types, PluginValidateFn, PluginFunction } from '@graphql-codegen/plugin-helpers';
+import { Types, PluginValidateFn, PluginFunction } from 'webql-codegen-plugin-helpers';
 import { visit, GraphQLSchema, concatAST, Kind, FragmentDefinitionNode } from 'graphql';
-import { LoadedFragment } from '@graphql-codegen/visitor-plugin-common';
+import { LoadedFragment } from 'webql-codegen-visitor-plugin-common';
 import { ReactApolloVisitor } from './visitor';
 import { extname } from 'path';
 import { ReactApolloRawPluginConfig } from './config';

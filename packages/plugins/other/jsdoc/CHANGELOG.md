@@ -1,4 +1,4 @@
-# @graphql-codegen/jsdoc
+# webql-codegen-jsdoc
 
 ## 1.17.8
 ### Patch Changes
@@ -8,5 +8,5 @@
 - 27fdf3c9: JSDoc plugin now outputs correct JSDoc annotations for types with a description
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

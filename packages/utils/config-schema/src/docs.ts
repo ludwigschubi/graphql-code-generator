@@ -16,10 +16,10 @@ export function generateDocs(schema: TJS.Definition, types: PluginConfig[]): Rec
     content += ``;
     content += `## Installation\n\n
 
-<img alt="${p.pluginName} plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/${p.pluginName}?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>\n\n
+<img alt="${p.pluginName} plugin version" src="https://img.shields.io/npm/v/webql-codegen-${p.pluginName}?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>\n\n
     
 :::shell Using \`yarn\`
-    yarn add -D @graphql-codegen/${p.pluginName}
+    yarn add -D webql-codegen-${p.pluginName}
 :::\n\n`;
     content += `## API Reference\n\n${apiDocs}`;
 

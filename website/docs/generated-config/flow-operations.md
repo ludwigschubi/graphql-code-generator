@@ -2,18 +2,18 @@ This plugin generates Flow types based on your `GraphQLSchema` and your GraphQL 
 
 It generates types for your GraphQL documents: Query, Mutation, Subscription and Fragment.
 
-This plugin requires you to use `@graphql-codegen/flow` as well, because it depends on it's types.
+This plugin requires you to use `webql-codegen-flow` as well, because it depends on it's types.
 
 ## Installation
 
 
 
-<img alt="flow-operations plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/flow-operations?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="flow-operations plugin version" src="https://img.shields.io/npm/v/webql-codegen-flow-operations?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/flow-operations
+    yarn add -D webql-codegen-flow-operations
 :::
 
 ## API Reference

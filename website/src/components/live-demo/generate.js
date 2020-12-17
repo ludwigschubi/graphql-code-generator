@@ -7,7 +7,7 @@ export async function generate(config, schema, documents) {
     const outputs = [];
     const [{ safeLoad }, { codegen }, { parse }] = await Promise.all([
       import('js-yaml').then(m => ('default' in m ? m.default : m)),
-      import('@graphql-codegen/core').then(m => ('default' in m ? m.default : m)),
+      import('webql-codegen-core').then(m => ('default' in m ? m.default : m)),
       import('graphql').then(m => ('default' in m ? m.default : m)),
     ]);
 

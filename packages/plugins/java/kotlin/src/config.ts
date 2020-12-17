@@ -1,4 +1,4 @@
-import { RawConfig, EnumValuesMap } from '@graphql-codegen/visitor-plugin-common';
+import { RawConfig, EnumValuesMap } from 'webql-codegen-visitor-plugin-common';
 export interface KotlinResolversPluginRawConfig extends RawConfig {
   /**
    * @description Customize the Java package name. The default package name will be generated according to the output file path.

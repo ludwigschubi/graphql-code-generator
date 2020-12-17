@@ -1,8 +1,8 @@
-import '@graphql-codegen/testing';
+import 'webql-codegen-testing';
 import { buildSchema } from 'graphql';
 import { plugin } from '../src/index';
 import { validateFlow } from './validate-flow';
-import { Types, mergeOutputs } from '@graphql-codegen/plugin-helpers';
+import { Types, mergeOutputs } from 'webql-codegen-plugin-helpers';
 
 describe('Flow Plugin', () => {
   describe('description to comment', () => {

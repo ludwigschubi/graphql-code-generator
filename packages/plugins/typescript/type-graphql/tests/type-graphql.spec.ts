@@ -1,5 +1,5 @@
-import '@graphql-codegen/testing';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import 'webql-codegen-testing';
+import { Types } from 'webql-codegen-plugin-helpers';
 import { buildSchema } from 'graphql';
 import { plugin } from '../src/index';
 

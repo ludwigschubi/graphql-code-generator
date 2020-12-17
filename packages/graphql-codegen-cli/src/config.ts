@@ -1,6 +1,6 @@
 import { cosmiconfig, defaultLoaders } from 'cosmiconfig';
 import { resolve } from 'path';
-import { DetailedError, Types } from '@graphql-codegen/plugin-helpers';
+import { DetailedError, Types } from 'webql-codegen-plugin-helpers';
 import { env } from 'string-env-interpolation';
 import yargs from 'yargs';
 import { GraphQLConfig } from 'graphql-config';

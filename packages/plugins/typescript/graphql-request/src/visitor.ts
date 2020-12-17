@@ -5,7 +5,7 @@ import {
   getConfigValue,
   indentMultiline,
   LoadedFragment,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import autoBind from 'auto-bind';
 import { GraphQLSchema, Kind, OperationDefinitionNode } from 'graphql';
 import { RawGraphQLRequestPluginConfig } from './config';

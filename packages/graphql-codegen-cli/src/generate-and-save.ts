@@ -1,5 +1,5 @@
 import { lifecycleHooks } from './hooks';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import { executeCodegen } from './codegen';
 import { createWatcher } from './utils/watcher';
 import { fileExists, readSync, writeSync, unlinkFile } from './utils/file-system';
@@ -9,7 +9,10 @@ import { debugLog } from './utils/debugging';
 import { CodegenContext, ensureContext } from './config';
 import { createHash } from 'crypto';
 
-const hash = (content: string): string => createHash('sha1').update(content).digest('base64');
+const hash = (content: string): string =>
+  createHash('sha1')
+    .update(content)
+    .digest('base64');
 
 export async function generate(
   input: CodegenContext | (Types.Config & { cwd?: string }),

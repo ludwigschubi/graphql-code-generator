@@ -19,7 +19,7 @@ import {
   transformComment,
   getConfigValue,
   DeclarationKind,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import autoBind from 'auto-bind';
 import { FlowPluginConfig } from './config';
 import { FlowOperationVariablesToObject } from './flow-variables-to-object';

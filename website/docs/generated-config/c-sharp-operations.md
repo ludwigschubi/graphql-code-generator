@@ -4,12 +4,12 @@ This plugin generates C# `class` based on your GraphQL operations.
 
 
 
-<img alt="c-sharp-operations plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/c-sharp-operations?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="c-sharp-operations plugin version" src="https://img.shields.io/npm/v/webql-codegen-c-sharp-operations?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/c-sharp-operations
+    yarn add -D webql-codegen-c-sharp-operations
 :::
 
 ## API Reference

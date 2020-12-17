@@ -1,7 +1,7 @@
-import { validateTs } from '@graphql-codegen/testing';
-import { Types, mergeOutputs } from '@graphql-codegen/plugin-helpers';
+import { validateTs } from 'webql-codegen-testing';
+import { Types, mergeOutputs } from 'webql-codegen-plugin-helpers';
 import { buildSchema } from 'graphql';
-import { plugin as tsPlugin } from '@graphql-codegen/typescript';
+import { plugin as tsPlugin } from 'webql-codegen-typescript';
 
 export const schema = buildSchema(/* GraphQL */ `
   type MyType {

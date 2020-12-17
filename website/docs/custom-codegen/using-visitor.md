@@ -105,7 +105,7 @@ module.exports = {
 
 This repository also contains a set of utils that might help you to write plugins faster using visitor pattern.
 
-All those utils are part of `@graphql-codegen/visitor-plugin-common` package.
+All those utils are part of `webql-codegen-visitor-plugin-common` package.
 
 It includes set of Visitor classes that you can use and extend, to implement your plugin easily:
 

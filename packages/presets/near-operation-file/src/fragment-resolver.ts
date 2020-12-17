@@ -1,4 +1,4 @@
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import {
   BaseVisitor,
   buildScalars,
@@ -9,7 +9,7 @@ import {
   ParsedConfig,
   RawConfig,
   ImportDeclaration,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { DocumentNode, FragmentDefinitionNode, GraphQLSchema, Kind, print } from 'graphql';
 import { DocumentImportResolverOptions } from './resolve-document-imports';
 import { extractExternalFragmentsInUse } from './utils';

@@ -1,6 +1,6 @@
-import { Types, PluginValidateFn, PluginFunction } from '@graphql-codegen/plugin-helpers';
+import { Types, PluginValidateFn, PluginFunction } from 'webql-codegen-plugin-helpers';
 import { visit, GraphQLSchema, concatAST, Kind, FragmentDefinitionNode } from 'graphql';
-import { RawClientSideBasePluginConfig, LoadedFragment } from '@graphql-codegen/visitor-plugin-common';
+import { RawClientSideBasePluginConfig, LoadedFragment } from 'webql-codegen-visitor-plugin-common';
 import { GraphQLRequestVisitor } from './visitor';
 import { extname } from 'path';
 import { RawGraphQLRequestPluginConfig } from './config';

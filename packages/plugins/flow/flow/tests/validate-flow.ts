@@ -1,14 +1,14 @@
-import { Types, mergeOutputs } from '@graphql-codegen/plugin-helpers';
+import { Types, mergeOutputs } from 'webql-codegen-plugin-helpers';
 const flow = require('./flow.js');
 
 export function validateFlow(code: Types.PluginOutput) {
   const errors = flow.checkContent('temp.flow.js', mergeOutputs([code]));
 
-  const lint = errors.map(function (err) {
+  const lint = errors.map(function(err) {
     const messages = err.message;
     const firstLoc = messages[0].loc;
     const message = messages
-      .map(function (msg) {
+      .map(function(msg) {
         return msg.descr;
       })
       .join('\n');

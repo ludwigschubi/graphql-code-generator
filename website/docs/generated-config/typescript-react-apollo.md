@@ -1,17 +1,17 @@
 This plugin generates React Apollo components and HOC with TypeScript typings.
 
-It extends the basic TypeScript plugins: `@graphql-codegen/typescript`, `@graphql-codegen/typescript-operations` - and thus shares a similar configuration.
+It extends the basic TypeScript plugins: `webql-codegen-typescript`, `webql-codegen-typescript-operations` - and thus shares a similar configuration.
 
 ## Installation
 
 
 
-<img alt="typescript-react-apollo plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/typescript-react-apollo?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="typescript-react-apollo plugin version" src="https://img.shields.io/npm/v/webql-codegen-typescript-react-apollo?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/typescript-react-apollo
+    yarn add -D webql-codegen-typescript-react-apollo
 :::
 
 ## API Reference

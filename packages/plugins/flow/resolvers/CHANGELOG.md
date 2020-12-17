@@ -1,4 +1,4 @@
-# @graphql-codegen/flow-resolvers
+# webql-codegen-flow-resolvers
 
 ## 1.17.10
 
@@ -9,8 +9,8 @@
 - Updated dependencies [89a6aa80]
 - Updated dependencies [f603b8f8]
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/visitor-plugin-common@1.17.15
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.15
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 1.17.9
 
@@ -27,6 +27,6 @@
 - Updated dependencies [e0d04cb6]
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/flow@1.18.0
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-flow@1.18.0
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

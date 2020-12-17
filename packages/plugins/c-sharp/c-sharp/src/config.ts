@@ -1,4 +1,4 @@
-import { RawConfig, EnumValuesMap } from '@graphql-codegen/visitor-plugin-common';
+import { RawConfig, EnumValuesMap } from 'webql-codegen-visitor-plugin-common';
 
 /**
  * @description This plugin generates C# `class` identifier for your schema types.

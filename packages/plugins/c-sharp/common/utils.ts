@@ -1,5 +1,5 @@
 import { Kind, TypeNode, StringValueNode } from 'graphql';
-import { indent } from '@graphql-codegen/visitor-plugin-common';
+import { indent } from 'webql-codegen-visitor-plugin-common';
 import { csharpNativeValueTypes } from './scalars';
 import { ListTypeField, CSharpFieldType } from './c-sharp-field-types';
 
@@ -10,7 +10,10 @@ export function transformComment(comment: string | StringValueNode, indentLevel 
   if (isStringValueNode(comment)) {
     comment = comment.value;
   }
-  comment = comment.trimStart().split('*/').join('*\\/');
+  comment = comment
+    .trimStart()
+    .split('*/')
+    .join('*\\/');
   let lines = comment.split('\n');
   lines = ['/// <summary>', ...lines.map(line => `/// ${line}`), '/// </summary>'];
   return lines

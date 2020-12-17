@@ -1,6 +1,6 @@
 import { printSchemaWithDirectives } from '@graphql-tools/utils';
-import { parseMapper } from '@graphql-codegen/visitor-plugin-common';
-import { Types, PluginFunction, addFederationReferencesToSchema } from '@graphql-codegen/plugin-helpers';
+import { parseMapper } from 'webql-codegen-visitor-plugin-common';
+import { Types, PluginFunction, addFederationReferencesToSchema } from 'webql-codegen-plugin-helpers';
 import { parse, visit, GraphQLSchema, printSchema } from 'graphql';
 import { TypeScriptResolversVisitor } from './visitor';
 import { TypeScriptResolversPluginConfig } from './config';

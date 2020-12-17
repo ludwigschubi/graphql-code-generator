@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-graphql-request
+# webql-codegen-typescript-graphql-request
 
 ## 2.0.2
 
@@ -6,7 +6,7 @@
 
 - 73442b73: fix grapqhl-request import types
 - Updated dependencies [92d8f876]
-  - @graphql-codegen/visitor-plugin-common@1.17.16
+  - webql-codegen-visitor-plugin-common@1.17.16
 
 ## 2.0.1
 
@@ -18,8 +18,8 @@
 - Updated dependencies [89a6aa80]
 - Updated dependencies [f603b8f8]
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/visitor-plugin-common@1.17.15
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.15
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 2.0.0
 
@@ -27,8 +27,8 @@
 
 - af3803b8: Upgrade generated code to match graphql-request v3.
 
-  - `@graphql-codegen/typescript-graphql-request` @ `v1` => matches `graphql-request` (v1 and v2)
-  - `@graphql-codegen/typescript-graphql-request` @ `v2` => matches `graphql-request` (v3)
+  - `webql-codegen-typescript-graphql-request` @ `v1` => matches `graphql-request` (v1 and v2)
+  - `webql-codegen-typescript-graphql-request` @ `v2` => matches `graphql-request` (v3)
 
   ## Breaking Changes
 
@@ -42,5 +42,5 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

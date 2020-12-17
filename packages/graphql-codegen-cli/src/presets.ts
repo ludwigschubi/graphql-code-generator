@@ -1,10 +1,10 @@
-import { DetailedError, Types } from '@graphql-codegen/plugin-helpers';
+import { DetailedError, Types } from 'webql-codegen-plugin-helpers';
 
 export async function getPresetByName(
   name: string,
   loader: Types.PackageLoaderFn<{ preset?: Types.OutputPreset; default?: Types.OutputPreset }>
 ): Promise<Types.OutputPreset> {
-  const possibleNames = [`@graphql-codegen/${name}`, `@graphql-codegen/${name}-preset`, name];
+  const possibleNames = [`webql-codegen-${name}`, `webql-codegen-${name}-preset`, name];
 
   for (const moduleName of possibleNames) {
     try {

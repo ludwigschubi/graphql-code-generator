@@ -1,4 +1,4 @@
-import { RawTypesConfig } from '@graphql-codegen/visitor-plugin-common';
+import { RawTypesConfig } from 'webql-codegen-visitor-plugin-common';
 
 /**
  * @description This plugin generates Flow types based on your `GraphQLSchema`.

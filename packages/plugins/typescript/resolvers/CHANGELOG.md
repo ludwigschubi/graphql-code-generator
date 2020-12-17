@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-resolvers
+# webql-codegen-typescript-resolvers
 
 ## 1.17.10
 
@@ -11,9 +11,9 @@
 - Updated dependencies [f603b8f8]
 - Updated dependencies [7ad7a1ae]
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/visitor-plugin-common@1.17.15
-  - @graphql-codegen/typescript@1.17.10
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.15
+  - webql-codegen-typescript@1.17.10
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 1.17.9
 
@@ -30,6 +30,6 @@
 - af3803b8: only transform federated parent types when they contain @external directive
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
-  - @graphql-codegen/typescript@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8
+  - webql-codegen-typescript@1.17.8

@@ -2,9 +2,9 @@ import { GraphQLSchema, isScalarType, GraphQLScalarType } from 'graphql';
 import { BaseJavaVisitor } from './base-java-visitor';
 import { VisitorConfig } from './visitor-config';
 import { JavaApolloAndroidPluginConfig } from './plugin';
-import { indentMultiline } from '@graphql-codegen/visitor-plugin-common';
+import { indentMultiline } from 'webql-codegen-visitor-plugin-common';
 import { Imports } from './imports';
-import { JavaDeclarationBlock } from '@graphql-codegen/java-common';
+import { JavaDeclarationBlock } from 'webql-codegen-java-common';
 
 const filteredScalars = ['String', 'Float', 'Int', 'Boolean'];
 

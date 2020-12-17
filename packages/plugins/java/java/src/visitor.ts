@@ -6,7 +6,7 @@ import {
   indent,
   buildScalars,
   getBaseTypeNode,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { JavaResolversPluginRawConfig } from './config';
 import {
   GraphQLSchema,
@@ -22,7 +22,7 @@ import {
   isInputObjectType,
   isEnumType,
 } from 'graphql';
-import { JAVA_SCALARS, JavaDeclarationBlock, wrapTypeWithModifiers } from '@graphql-codegen/java-common';
+import { JAVA_SCALARS, JavaDeclarationBlock, wrapTypeWithModifiers } from 'webql-codegen-java-common';
 
 export interface JavaResolverParsedConfig extends ParsedConfig {
   package: string;

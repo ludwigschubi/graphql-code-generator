@@ -1,4 +1,4 @@
-import { validateTs } from '@graphql-codegen/testing';
+import { validateTs } from 'webql-codegen-testing';
 import { plugin } from '../src/index';
 import { parse } from 'graphql';
 

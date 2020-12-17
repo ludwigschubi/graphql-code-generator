@@ -1,4 +1,4 @@
-# @graphql-codegen/introspection
+# webql-codegen-introspection
 
 ## 1.18.0
 
@@ -9,7 +9,7 @@
 ### Patch Changes
 
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 1.17.8
 
@@ -19,4 +19,4 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-plugin-helpers@1.17.8

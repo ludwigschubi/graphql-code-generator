@@ -2,18 +2,18 @@ This plugin generates resolvers signature based on your `GraphQLSchema`.
 
 It generates types for your entire schema: types, input types, enum, interface, scalar and union.
 
-This plugin requires you to use `@graphql-codegen/flow` as well, because it depends on it's types.
+This plugin requires you to use `webql-codegen-flow` as well, because it depends on it's types.
 
 ## Installation
 
 
 
-<img alt="flow-resolvers plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/flow-resolvers?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="flow-resolvers plugin version" src="https://img.shields.io/npm/v/webql-codegen-flow-resolvers?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/flow-resolvers
+    yarn add -D webql-codegen-flow-resolvers
 :::
 
 ## API Reference

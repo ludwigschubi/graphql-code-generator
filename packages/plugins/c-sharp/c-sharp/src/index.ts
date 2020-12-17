@@ -1,5 +1,5 @@
 import { parse, GraphQLSchema, printSchema, visit } from 'graphql';
-import { PluginFunction, Types } from '@graphql-codegen/plugin-helpers';
+import { PluginFunction, Types } from 'webql-codegen-plugin-helpers';
 import { CSharpResolversVisitor } from './visitor';
 import { CSharpResolversPluginRawConfig } from './config';
 

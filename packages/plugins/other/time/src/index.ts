@@ -1,5 +1,5 @@
 import { GraphQLSchema } from 'graphql';
-import { PluginFunction, Types } from '@graphql-codegen/plugin-helpers';
+import { PluginFunction, Types } from 'webql-codegen-plugin-helpers';
 import moment from 'moment';
 import { extname } from 'path';
 import { TimePluginConfig } from './config';

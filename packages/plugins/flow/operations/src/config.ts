@@ -1,11 +1,11 @@
-import { RawDocumentsConfig } from '@graphql-codegen/visitor-plugin-common';
+import { RawDocumentsConfig } from 'webql-codegen-visitor-plugin-common';
 
 /**
  * @description This plugin generates Flow types based on your `GraphQLSchema` and your GraphQL operations and fragments.
  *
  * It generates types for your GraphQL documents: Query, Mutation, Subscription and Fragment.
  *
- * This plugin requires you to use `@graphql-codegen/flow` as well, because it depends on it's types.
+ * This plugin requires you to use `webql-codegen-flow` as well, because it depends on it's types.
  */
 export interface FlowDocumentsPluginConfig extends RawDocumentsConfig {
   /**

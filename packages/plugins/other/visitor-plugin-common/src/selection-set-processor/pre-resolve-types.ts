@@ -7,7 +7,7 @@ import {
   SelectionSetProcessorConfig,
 } from './base';
 import { GraphQLObjectType, GraphQLInterfaceType, isEnumType } from 'graphql';
-import { getBaseType } from '@graphql-codegen/plugin-helpers';
+import { getBaseType } from 'webql-codegen-plugin-helpers';
 
 export class PreResolveTypesProcessor extends BaseSelectionSetProcessor<SelectionSetProcessorConfig> {
   transformTypenameField(type: string, name: string): ProcessResult {

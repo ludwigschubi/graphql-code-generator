@@ -1,4 +1,4 @@
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import {
   visit,
   concatAST,

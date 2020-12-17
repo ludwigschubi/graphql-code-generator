@@ -1,6 +1,6 @@
 import { extname } from 'path';
 
-import { PluginFunction, PluginValidateFn, Types, removeFederation } from '@graphql-codegen/plugin-helpers';
+import { PluginFunction, PluginValidateFn, Types, removeFederation } from 'webql-codegen-plugin-helpers';
 import { GraphQLSchema, execute, parse } from 'graphql';
 
 interface IntrospectionResultData {

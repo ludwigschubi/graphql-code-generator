@@ -5,8 +5,8 @@ import {
   normalizeOutputParam,
   normalizeInstanceOrArray,
   normalizeConfig,
-} from '@graphql-codegen/plugin-helpers';
-import { codegen } from '@graphql-codegen/core';
+} from 'webql-codegen-plugin-helpers';
+import { codegen } from 'webql-codegen-core';
 
 import { Renderer, ErrorRenderer } from './utils/listr-renderer';
 import { GraphQLError, GraphQLSchema, DocumentNode, parse } from 'graphql';

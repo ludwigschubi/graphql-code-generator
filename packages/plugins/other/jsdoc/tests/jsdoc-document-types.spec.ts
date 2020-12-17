@@ -1,4 +1,4 @@
-import '@graphql-codegen/testing';
+import 'webql-codegen-testing';
 import { buildSchema, parse } from 'graphql';
 import { plugin } from '../src/index';
 

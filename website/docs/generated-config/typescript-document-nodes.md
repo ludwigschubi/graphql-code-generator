@@ -4,12 +4,12 @@ This plugin generates TypeScript source (`.ts`) file from GraphQL files (`.graph
 
 
 
-<img alt="typescript-document-nodes plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/typescript-document-nodes?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="typescript-document-nodes plugin version" src="https://img.shields.io/npm/v/webql-codegen-typescript-document-nodes?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/typescript-document-nodes
+    yarn add -D webql-codegen-typescript-document-nodes
 :::
 
 ## API Reference

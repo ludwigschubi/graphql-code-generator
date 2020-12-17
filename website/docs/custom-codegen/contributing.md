@@ -58,10 +58,10 @@ Now, create a simple `package.json` (or, you can [copy from other plugins](https
 
 Make sure to follow the following instructions:
 
-1. Make sure the package name starts with `@graphql-codegen/` prefix.
+1. Make sure the package name starts with `webql-codegen-` prefix.
 
 ```json
-  "name": "@graphql-codegen/MY_PLUGIN_NAME",
+  "name": "webql-codegen-MY_PLUGIN_NAME",
 ```
 
 2. Make sure that the version is aligned with all other existing packages.
@@ -70,7 +70,7 @@ Make sure to follow the following instructions:
   "version": "X.Y.Z",
 ```
 
-> The current version of the codegen is: ![Codegen version](https://img.shields.io/npm/v/@graphql-codegen/cli?color=%23e15799&label=)
+> The current version of the codegen is: ![Codegen version](https://img.shields.io/npm/v/webql-codegen-cli?color=%23e15799&label=)
 
 3. Make sure that you have the following `scripts` configured;
 
@@ -88,7 +88,7 @@ Make sure to follow the following instructions:
 
 ```json
   "dependencies": {
-    "@graphql-codegen/plugin-helpers": "X.Y.Z",
+    "webql-codegen-plugin-helpers": "X.Y.Z",
     "tslib": "~1.11.1"
   },
   "peerDependencies": {
@@ -100,7 +100,7 @@ Make sure to follow the following instructions:
 
 > `tslib` is required to compile plugins.
 
-> `@graphql-codegen/plugin-helpers` contains helpful types and utils. Make sure it has the same version as your package.
+> `webql-codegen-plugin-helpers` contains helpful types and utils. Make sure it has the same version as your package.
 
 Now that your plugin is configured, you need to make sure Yarn knows about it and links it to the monorepo, so run the following command again, in the root direcory:
 
@@ -111,7 +111,7 @@ Now that your plugin is configured, you need to make sure Yarn knows about it an
 To create your new plugin, simply create `src/index.ts` in your plugin directory, and start with the following:
 
 ```ts
-import { PluginFunction, Types } from '@graphql-codegen/plugin-helpers';
+import { PluginFunction, Types } from 'webql-codegen-plugin-helpers';
 
 export type MyPluginConfig = {
   name: string;

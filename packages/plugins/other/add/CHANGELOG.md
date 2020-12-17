@@ -1,4 +1,4 @@
-# @graphql-codegen/add
+# webql-codegen-add
 
 ## 2.0.1
 
@@ -9,7 +9,7 @@
 - ac067ea0: Fix for empty lines added by add plugin
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-plugin-helpers@1.17.8
 
 ## 2.0.0
 

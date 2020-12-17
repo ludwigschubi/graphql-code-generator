@@ -1,8 +1,8 @@
-import '@graphql-codegen/testing';
+import 'webql-codegen-testing';
 import { buildSchema, parse } from 'graphql';
 import { plugin } from '../src/index';
 import { CSharpOperationsRawPluginConfig } from '../src/config';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 
 describe('C# Operations', () => {
   describe('Namespaces', () => {

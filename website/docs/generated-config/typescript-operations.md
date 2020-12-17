@@ -7,12 +7,12 @@ Note: In most configurations, this plugin requires you to use `typescript as wel
 
 
 
-<img alt="typescript-operations plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/typescript-operations?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="typescript-operations plugin version" src="https://img.shields.io/npm/v/webql-codegen-typescript-operations?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/typescript-operations
+    yarn add -D webql-codegen-typescript-operations
 :::
 
 ## API Reference

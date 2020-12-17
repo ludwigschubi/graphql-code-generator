@@ -4,11 +4,11 @@ import {
   getConfigValue,
   LoadedFragment,
   DocumentMode,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { VueApolloRawPluginConfig } from './config';
 import autoBind from 'auto-bind';
 import { OperationDefinitionNode, GraphQLSchema } from 'graphql';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import { pascalCase } from 'pascal-case';
 
 export interface VueApolloPluginConfig extends ClientSideBasePluginConfig {

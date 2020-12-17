@@ -1,7 +1,7 @@
-import { Types, PluginValidateFn, PluginFunction } from '@graphql-codegen/plugin-helpers';
+import { Types, PluginValidateFn, PluginFunction } from 'webql-codegen-plugin-helpers';
 import { visit, concatAST, GraphQLSchema, Kind, FragmentDefinitionNode } from 'graphql';
 import { extname } from 'path';
-import { LoadedFragment, RawClientSideBasePluginConfig, DocumentMode } from '@graphql-codegen/visitor-plugin-common';
+import { LoadedFragment, RawClientSideBasePluginConfig, DocumentMode } from 'webql-codegen-visitor-plugin-common';
 import { TypeScriptDocumentNodesVisitor } from './visitor';
 
 export const plugin: PluginFunction<RawClientSideBasePluginConfig> = (

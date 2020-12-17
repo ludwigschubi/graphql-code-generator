@@ -1,17 +1,17 @@
 This plugin generates Stencil Apollo functional components typings
 
-It extends the basic TypeScript plugins: `@graphql-codegen/typescript`, `@graphql-codegen/typescript-operations` - and thus shares a similar configuration.
+It extends the basic TypeScript plugins: `webql-codegen-typescript`, `webql-codegen-typescript-operations` - and thus shares a similar configuration.
 
 ## Installation
 
 
 
-<img alt="typescript-stencil-apollo plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/typescript-stencil-apollo?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="typescript-stencil-apollo plugin version" src="https://img.shields.io/npm/v/webql-codegen-typescript-stencil-apollo?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/typescript-stencil-apollo
+    yarn add -D webql-codegen-typescript-stencil-apollo
 :::
 
 ## API Reference

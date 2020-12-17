@@ -58,18 +58,17 @@ async function generate() {
           return {
             ...prev,
             [plugin.pluginName]: refObj,
-            [`@graphql-codegen/${plugin.pluginName}`]: refObj,
+            [`webql-codegen-${plugin.pluginName}`]: refObj,
           };
         }, {}),
       },
       {
         type: 'string',
         oneOf: relevantConfigurations.reduce((prev, p) => {
-          const description = `${
-            (schema.definitions[p.identifier] as TJS.Definition).description || ''
-          }\n\nFor more details and documentation: https://graphql-code-generator.com/docs/plugins/${
+          const description = `${(schema.definitions[p.identifier] as TJS.Definition).description ||
+            ''}\n\nFor more details and documentation: https://graphql-code-generator.com/docs/plugins/${
             p.pluginName
-          }\n\n=> Make sure to include "@graphql-codegen/${
+          }\n\n=> Make sure to include "webql-codegen-${
             p.pluginName
           }" in your package.json file and install your dependencies.\n\n`;
 
@@ -80,7 +79,7 @@ async function generate() {
               description,
             },
             {
-              const: `@graphql-codegen/${p.pluginName}`,
+              const: `webql-codegen-${p.pluginName}`,
               description,
             },
           ];

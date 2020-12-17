@@ -27,7 +27,7 @@ import {
 } from './utils';
 import { NormalizedScalarsMap, ConvertNameFn, LoadedFragment, GetFragmentSuffixFn } from './types';
 import { BaseVisitorConvertOptions } from './base-visitor';
-import { getBaseType } from '@graphql-codegen/plugin-helpers';
+import { getBaseType } from 'webql-codegen-plugin-helpers';
 import { ParsedDocumentsConfig } from './base-documents-visitor';
 import {
   LinkField,
@@ -365,7 +365,10 @@ export class SelectionSetToObject<Config extends ParsedDocumentsConfig = ParsedD
         name: this._processor.config.formatNamedField(field.name.value, selectedFieldType),
         type: realSelectedFieldType.name,
         selectionSet: this._processor.config.wrapTypeWithModifiers(
-          selectionSet.transformSelectionSet().split(`\n`).join(`\n  `),
+          selectionSet
+            .transformSelectionSet()
+            .split(`\n`)
+            .join(`\n  `),
           selectedFieldType
         ),
       });

@@ -2,12 +2,12 @@
 
 
 
-<img alt="java-resolvers plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/java-resolvers?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="java-resolvers plugin version" src="https://img.shields.io/npm/v/webql-codegen-java-resolvers?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/java-resolvers
+    yarn add -D webql-codegen-java-resolvers
 :::
 
 ## API Reference

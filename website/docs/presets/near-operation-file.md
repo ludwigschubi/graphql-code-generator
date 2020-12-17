@@ -7,7 +7,7 @@ This preset generates a file per each operation file.
 
 ## Installation
 
-    yarn add @graphql-codegen/near-operation-file-preset
+    yarn add webql-codegen-near-operation-file-preset
 
 ## Example
 

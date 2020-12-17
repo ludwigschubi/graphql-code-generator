@@ -1,6 +1,6 @@
-import '@graphql-codegen/testing';
+import 'webql-codegen-testing';
 
-import { codegen } from '@graphql-codegen/core';
+import { codegen } from 'webql-codegen-core';
 import { buildASTSchema, parse } from 'graphql';
 import gql from 'graphql-tag';
 

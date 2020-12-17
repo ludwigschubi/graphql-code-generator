@@ -1,4 +1,4 @@
-# @graphql-codegen/c-sharp-operations
+# webql-codegen-c-sharp-operations
 
 ## 1.17.9
 
@@ -7,7 +7,7 @@
 - f92c5245: Fix c-sharp-operations package description
 - Updated dependencies [07f9b1b2]
 - Updated dependencies [35f67120]
-  - @graphql-codegen/visitor-plugin-common@1.17.14
+  - webql-codegen-visitor-plugin-common@1.17.14
 
 ## 1.17.8
 
@@ -18,5 +18,5 @@
 - 1980230d: Correctly escape double quotes for constant strings
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

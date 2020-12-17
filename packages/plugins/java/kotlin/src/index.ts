@@ -1,7 +1,7 @@
 import { parse, GraphQLSchema, printSchema, visit } from 'graphql';
-import { PluginFunction, Types } from '@graphql-codegen/plugin-helpers';
+import { PluginFunction, Types } from 'webql-codegen-plugin-helpers';
 import { KotlinResolversVisitor } from './visitor';
-import { buildPackageNameFromPath } from '@graphql-codegen/java-common';
+import { buildPackageNameFromPath } from 'webql-codegen-java-common';
 import { dirname, normalize } from 'path';
 import { KotlinResolversPluginRawConfig } from './config';
 

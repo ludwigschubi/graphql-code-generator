@@ -1,5 +1,5 @@
 import { GraphQLSchema, concatAST, visit } from 'graphql';
-import { PluginFunction, Types } from '@graphql-codegen/plugin-helpers';
+import { PluginFunction, Types } from 'webql-codegen-plugin-helpers';
 import { CompatibilityPluginVisitor } from './visitor';
 import { CompatibilityPluginRawConfig } from './config';
 

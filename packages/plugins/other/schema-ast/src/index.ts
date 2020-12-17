@@ -1,5 +1,5 @@
 import { GraphQLSchema, printSchema } from 'graphql';
-import { PluginFunction, PluginValidateFn, Types, removeFederation } from '@graphql-codegen/plugin-helpers';
+import { PluginFunction, PluginValidateFn, Types, removeFederation } from 'webql-codegen-plugin-helpers';
 import { extname } from 'path';
 import { printSchemaWithDirectives } from '@graphql-tools/utils';
 

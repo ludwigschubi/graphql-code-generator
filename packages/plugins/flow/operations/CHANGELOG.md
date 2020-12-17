@@ -1,4 +1,4 @@
-# @graphql-codegen/flow-operations
+# webql-codegen-flow-operations
 
 ## 1.18.0
 
@@ -15,6 +15,6 @@
 - Updated dependencies [e0d04cb6]
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/flow@1.18.0
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-flow@1.18.0
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

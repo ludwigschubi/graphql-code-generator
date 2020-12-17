@@ -22,8 +22,8 @@ Then, create a `package.json` file in your project root, with the following cont
   },
   "dependencies": {
     "graphql": "14.5.8",
-    "@graphql-codegen/cli": "1.7.0",
-    "@graphql-codegen/RELEVANT_PLUGIN": "1.7.0"
+    "webql-codegen-cli": "1.7.0",
+    "webql-codegen-RELEVANT_PLUGIN": "1.7.0"
   }
 }
 ```

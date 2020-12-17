@@ -1,6 +1,6 @@
 import { EnumValuesMap, ParsedEnumValuesMap } from './types';
 import { GraphQLSchema, isEnumType, GraphQLEnumType } from 'graphql';
-import { DetailedError } from '@graphql-codegen/plugin-helpers';
+import { DetailedError } from 'webql-codegen-plugin-helpers';
 import { parseMapper } from './mappers';
 
 export function parseEnumValues(schema: GraphQLSchema, mapOrStr: EnumValuesMap = {}): ParsedEnumValuesMap {

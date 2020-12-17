@@ -1,4 +1,4 @@
-# @graphql-codegen/near-operation-file-preset
+# webql-codegen-near-operation-file-preset
 
 ## 1.17.11
 
@@ -7,7 +7,7 @@
 - 29d2ab4f: Improve 'importAllFragmentsFrom' signature by adding the source file that requests the fragment
 - Updated dependencies [07f9b1b2]
 - Updated dependencies [35f67120]
-  - @graphql-codegen/visitor-plugin-common@1.17.14
+  - webql-codegen-visitor-plugin-common@1.17.14
 
 ## 1.17.10
 
@@ -24,9 +24,9 @@
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
 - Updated dependencies [ac067ea0]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
-  - @graphql-codegen/add@2.0.1
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8
+  - webql-codegen-add@2.0.1
 
 ## 1.17.8
 
@@ -34,5 +34,5 @@
 
 - Updated dependencies [bc6e5c08]
 - Updated dependencies [4266a15f]
-  - @graphql-codegen/add@2.0.0
-  - @graphql-codegen/visitor-plugin-common@1.17.12
+  - webql-codegen-add@2.0.0
+  - webql-codegen-visitor-plugin-common@1.17.12

@@ -1,8 +1,8 @@
-import { validateTs } from '@graphql-codegen/testing';
+import { validateTs } from 'webql-codegen-testing';
 import { plugin, addToSchema } from './../src/index';
 import { buildSchema, print, GraphQLSchema } from 'graphql';
 import { plugin as tsPlugin } from '../../typescript/src/index';
-import { Types, mergeOutputs } from '@graphql-codegen/plugin-helpers';
+import { Types, mergeOutputs } from 'webql-codegen-plugin-helpers';
 
 describe('TypeScript Mongo', () => {
   const validate = async (content: Types.PluginOutput, schema: GraphQLSchema, config: any) => {

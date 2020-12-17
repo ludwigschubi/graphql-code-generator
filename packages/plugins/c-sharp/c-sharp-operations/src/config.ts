@@ -1,4 +1,4 @@
-import { RawClientSideBasePluginConfig } from '@graphql-codegen/visitor-plugin-common';
+import { RawClientSideBasePluginConfig } from 'webql-codegen-visitor-plugin-common';
 
 /**
  * @description This plugin generates C# `class` based on your GraphQL operations.

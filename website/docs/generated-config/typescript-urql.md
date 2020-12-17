@@ -4,12 +4,12 @@ This plugin generates `urql` (https://github.com/FormidableLabs/urql) components
 
 
 
-<img alt="typescript-urql plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/typescript-urql?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="typescript-urql plugin version" src="https://img.shields.io/npm/v/webql-codegen-typescript-urql?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/typescript-urql
+    yarn add -D webql-codegen-typescript-urql
 :::
 
 ## API Reference

@@ -1,7 +1,7 @@
-import { useMonorepo } from '@graphql-codegen/testing';
+import { useMonorepo } from 'webql-codegen-testing';
 import { generate } from '../src/generate-and-save';
 import * as fs from '../src/utils/file-system';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import { dirname, join } from 'path';
 import makeDir from 'make-dir';
 

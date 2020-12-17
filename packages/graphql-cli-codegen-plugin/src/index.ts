@@ -6,7 +6,7 @@ import {
   updateContextWithCliFlags,
   buildOptions,
   YamlCliFlags,
-} from '@graphql-codegen/cli';
+} from 'webql-codegen-cli';
 
 export default defineCommand<{}, YamlCliFlags>(api => {
   return {

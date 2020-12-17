@@ -11,7 +11,7 @@ This plugin generates [`oclif`](https://www.npmjs.com/package/oclif) CLI command
 
 [You can find a working example of this plugin here](https://github.com/kalzoo/graphql-codegen-oclif-example/)
 
-    yarn add @graphql-codegen/typescript @graphql-codegen/typescript-oclif
+    yarn add webql-codegen-typescript webql-codegen-typescript-oclif
 
 The, make sure you have `typescript` plugin as well in your configuration:
 
@@ -117,7 +117,7 @@ export default handler;
 ### Step 4: Add & Configure GraphQL Codegen
 
 First, follow the GraphQL-Code-Generator guide to install it, and make sure to also install
-`@graphql-codegen/typescript-oclif`. Then, change your `codegen.yml` file to look like this:
+`webql-codegen-typescript-oclif`. Then, change your `codegen.yml` file to look like this:
 
 ```
 schema: <path-to-your-schema>

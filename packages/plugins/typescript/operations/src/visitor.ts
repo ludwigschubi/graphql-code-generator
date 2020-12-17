@@ -11,7 +11,7 @@ import {
   SelectionSetProcessorConfig,
   SelectionSetToObject,
   wrapTypeWithModifiers,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import autoBind from 'auto-bind';
 import { GraphQLOutputType, GraphQLSchema, isEnumType, isNonNullType } from 'graphql';
 import { TypeScriptDocumentsPluginConfig } from './config';

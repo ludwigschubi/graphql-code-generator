@@ -11,7 +11,7 @@ title: TypeScript Vue Apollo
 ## Installation
 
 ```bash
-  yarn add @graphql-codegen/typescript-vue-apollo @vue/apollo-composable @vue/composition-api
+  yarn add webql-codegen-typescript-vue-apollo @vue/apollo-composable @vue/composition-api
 ```
 
 ## Examples

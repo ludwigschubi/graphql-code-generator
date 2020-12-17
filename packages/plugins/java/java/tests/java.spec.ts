@@ -1,8 +1,8 @@
-import '@graphql-codegen/testing';
+import 'webql-codegen-testing';
 import { buildSchema } from 'graphql';
 import { plugin } from '../src/index';
 import { validateJava } from '../../common/tests/validate-java';
-import { mergeOutputs } from '@graphql-codegen/plugin-helpers';
+import { mergeOutputs } from 'webql-codegen-plugin-helpers';
 
 const OUTPUT_FILE = 'com/java/generated/resolvers.java';
 

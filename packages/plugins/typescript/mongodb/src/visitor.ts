@@ -7,8 +7,8 @@ import {
   BaseVisitor,
   buildScalars,
   DEFAULT_SCALARS,
-} from '@graphql-codegen/visitor-plugin-common';
-import { TypeScriptOperationVariablesToObject } from '@graphql-codegen/typescript';
+} from 'webql-codegen-visitor-plugin-common';
+import { TypeScriptOperationVariablesToObject } from 'webql-codegen-typescript';
 import autoBind from 'auto-bind';
 import { Directives, TypeScriptMongoPluginConfig } from './config';
 import {

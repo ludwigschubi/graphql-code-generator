@@ -1,4 +1,4 @@
-import { useMonorepo } from '@graphql-codegen/testing';
+import { useMonorepo } from 'webql-codegen-testing';
 import { GraphQLObjectType, buildSchema, buildASTSchema, parse, print } from 'graphql';
 import { mergeTypeDefs } from '@graphql-tools/merge';
 import { executeCodegen } from '../src';

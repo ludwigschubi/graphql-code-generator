@@ -9,7 +9,7 @@ title: Migration to 1.0.0
 
 Our goals (and achievements) for 1.0.0 release was:
 
-- Rename all package from `graphql-codegen-...` to scoped packages `@graphql-codegen/...`.
+- Rename all package from `graphql-codegen-...` to scoped packages `webql-codegen-...`.
 - Stabilize the core package and the YML configuration file.
 - Remove the old, deprecated code from this repostory (everything related to `flattenDocuments` and `buildSchemaContext`).
 - Separate the CLI package from the core package, and create an easy-to-use and easy-to-consume core package.
@@ -35,7 +35,7 @@ The reason for this change is the fact that now `typescript-operations` uses `Pi
 
 First, the new packages have a different name, that means that you need to manually update those packages names, and not just it's version.
 
-The `graphql-code-generator` package is now `@graphql-codegen/cli` and all other packages has been changes from `graphql-codegen-...` to `@graphql-codegen/...`.
+The `graphql-code-generator` package is now `webql-codegen-cli` and all other packages has been changes from `graphql-codegen-...` to `webql-codegen-...`.
 
 So start by updating your `package.json`:
 
@@ -57,9 +57,9 @@ So start by updating your `package.json`:
 ```json
 {
   "devDependencies": {
-    "@graphql-codegen/cli": "^1.0.0",
-    "@graphql-codegen/typescript": "^1.0.0",
-    "@graphql-codegen/typescript-operations": "^1.0.0"
+    "webql-codegen-cli": "^1.0.0",
+    "webql-codegen-typescript": "^1.0.0",
+    "webql-codegen-typescript-operations": "^1.0.0"
   }
 }
 ```
@@ -120,7 +120,7 @@ It will generates for you types that are pointing to the new form of types. It s
 
 To use it, start by installing from NPM:
 
-    yarn add -D @graphql-codegen/typescript-compatibility
+    yarn add -D webql-codegen-typescript-compatibility
 
 Then, add it to your codegen configuration:
 

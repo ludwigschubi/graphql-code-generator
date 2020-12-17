@@ -6,7 +6,7 @@ import {
   getConfigValue,
   buildScalars,
   ParsedConfig,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { GraphQLSchema, OperationDefinitionNode, OperationTypeNode, FragmentDefinitionNode } from 'graphql';
 
 import { selectionSetToTypes, SelectionSetToObjectResult } from './selection-set-to-types';

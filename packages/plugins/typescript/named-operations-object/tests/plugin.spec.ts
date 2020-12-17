@@ -1,4 +1,4 @@
-import '@graphql-codegen/testing';
+import 'webql-codegen-testing';
 import { plugin } from '../src';
 import { parse } from 'graphql';
 

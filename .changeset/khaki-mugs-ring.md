@@ -1,5 +1,5 @@
 ---
-'@graphql-codegen/plugin-helpers': patch
+'webql-codegen-plugin-helpers': patch
 ---
 
 Unrequire documents and config for GenerateOptions

@@ -1,9 +1,5 @@
-import { PluginFunction, PluginValidateFn, Types } from '@graphql-codegen/plugin-helpers';
-import {
-  NamingConvention,
-  LoadedFragment,
-  RawClientSideBasePluginConfig,
-} from '@graphql-codegen/visitor-plugin-common';
+import { PluginFunction, PluginValidateFn, Types } from 'webql-codegen-plugin-helpers';
+import { NamingConvention, LoadedFragment, RawClientSideBasePluginConfig } from 'webql-codegen-visitor-plugin-common';
 import { GraphQLSchema, visit, concatAST, FragmentDefinitionNode, Kind } from 'graphql';
 import { TypeScriptDocumentNodesVisitor } from './visitor';
 

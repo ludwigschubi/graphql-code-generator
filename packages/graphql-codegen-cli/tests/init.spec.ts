@@ -130,9 +130,9 @@ describe('init', () => {
     expect(output.plugins).toHaveLength(3);
 
     // expected plugins
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-operations');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-apollo-angular');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-operations');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-apollo-angular');
     // should not have other plugins
     expect(Object.keys(pkg.devDependencies)).toHaveLength(4);
   });
@@ -173,9 +173,9 @@ describe('init', () => {
     expect(output.plugins).toHaveLength(3);
 
     // expected plugins
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-operations');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-react-apollo');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-operations');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-react-apollo');
     // should not have other plugins
     expect(Object.keys(pkg.devDependencies)).toHaveLength(4);
   });
@@ -216,9 +216,9 @@ describe('init', () => {
     expect(output.plugins).toHaveLength(3);
 
     // expected plugins
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-operations');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-stencil-apollo');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-operations');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-stencil-apollo');
     // should not have other plugins
     expect(Object.keys(pkg.devDependencies)).toHaveLength(4);
   });
@@ -257,8 +257,8 @@ describe('init', () => {
     expect(output.plugins).toHaveLength(2);
 
     // expected plugins
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-resolvers');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-resolvers');
     // should not have other plugins
     expect(Object.keys(pkg.devDependencies)).toHaveLength(4); // 3 - because we have typescript package in devDeps
   });
@@ -389,11 +389,11 @@ describe('init', () => {
     // script name should match what we provided
     expect(pkg.scripts[script]).toEqual('graphql-codegen --config codegen.yml');
     // expected plugins
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-operations');
-    expect(pkg.devDependencies).toHaveProperty('@graphql-codegen/typescript-apollo-angular');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-operations');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-apollo-angular');
     // should not have these plugins
-    expect(pkg.devDependencies).not.toHaveProperty('@graphql-codegen/typescript-resolvers');
+    expect(pkg.devDependencies).not.toHaveProperty('webql-codegen-typescript-resolvers');
 
     // logs
     const welcomeMsg = logSpy.mock.calls[0][0];
@@ -592,7 +592,7 @@ describe('init', () => {
     plugins.forEach(pkg => {
       const { name } = require(`../../plugins/${pkg.pathInRepo}/package.json`);
 
-      expect(pkg.package.replace('@graphql-codegen/', '')).toEqual(pkg.value);
+      expect(pkg.package.replace('webql-codegen-', '')).toEqual(pkg.value);
       expect(pkg.package).toEqual(name);
     });
   });

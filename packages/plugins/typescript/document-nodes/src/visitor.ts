@@ -1,13 +1,13 @@
 import { TypeScriptDocumentNodesRawPluginConfig } from '.';
 import autoBind from 'auto-bind';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import {
   getConfigValue,
   LoadedFragment,
   ClientSideBaseVisitor,
   NamingConvention,
   ClientSideBasePluginConfig,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { GraphQLSchema } from 'graphql';
 
 export interface TypeScriptDocumentNodesPluginConfig extends ClientSideBasePluginConfig {

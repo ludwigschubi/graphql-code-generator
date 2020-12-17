@@ -28,7 +28,7 @@ We currently support and maintain [these plugins](https://graphql-code-generator
 Start by installing the basic deps of GraphQL Codegen;
 
     yarn add graphql
-    yarn add -D @graphql-codegen/cli
+    yarn add -D webql-codegen-cli
 
 GraphQL Code Generator lets you setup everything by simply running the following command:
 
@@ -40,7 +40,7 @@ If you don't want to use the wizard, install it by yourself and create a basic `
 
 Install CLI using `yarn`:
 
-    yarn add -D @graphql-codegen/cli
+    yarn add -D webql-codegen-cli
 
 And create a config like below:
 

@@ -1,4 +1,4 @@
-# @graphql-codegen/core
+# webql-codegen-core
 
 ## 1.17.8
 ### Patch Changes
@@ -8,4 +8,4 @@
 - ac067ea0: Filter `prepend` and `append` coming from plugins, make sure not to add empty lines when not needed
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-plugin-helpers@1.17.8

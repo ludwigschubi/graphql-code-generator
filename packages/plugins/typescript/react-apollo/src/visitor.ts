@@ -5,11 +5,11 @@ import {
   LoadedFragment,
   OMIT_TYPE,
   DocumentMode,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { ReactApolloRawPluginConfig } from './config';
 import autoBind from 'auto-bind';
 import { OperationDefinitionNode, Kind, GraphQLSchema } from 'graphql';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import { pascalCase } from 'pascal-case';
 import { camelCase } from 'camel-case';
 

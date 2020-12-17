@@ -7,10 +7,10 @@ The codegen has also a complete programmatic API. You can use it if you need to 
 
 ### Basic Programmatic Usage
 
-In order to use the programmatic API, start by importing `codegen` from `@graphql-codegen/core`:
+In order to use the programmatic API, start by importing `codegen` from `webql-codegen-core`:
 
 ```ts
-import { codegen } from '@graphql-codegen/core';
+import { codegen } from 'webql-codegen-core';
 ```
 
 Then, create a configuration object ([complete signature](https://github.com/dotansimha/graphql-code-generator/blob/master/packages/graphql-codegen-core/src/codegen.ts#L7-L16)):
@@ -18,7 +18,7 @@ Then, create a configuration object ([complete signature](https://github.com/dot
 ```ts
 import { buildSchema } from 'graphql';
 import * as fs from 'fs';
-import * as typescriptPlugin from '@graphql-codegen/typescript';
+import * as typescriptPlugin from 'webql-codegen-typescript';
 import { printSchema, parse, GraphQLSchema } from 'graphql';
 
 const schema: GraphQLSchema = buildSchema(`type A {}`);
@@ -64,10 +64,10 @@ You can use one of the tools from [`@graphql-toolkit`](https://github.com/ardata
 
 ## Using the CLI instead of `core`
 
-If you wish to have the benefits that `cli` package has (like loading schema and document files, parsing endpoints and more), you can use `require()` (or `import`) for `@graphql-codegen/cli` directly with Node.JS:
+If you wish to have the benefits that `cli` package has (like loading schema and document files, parsing endpoints and more), you can use `require()` (or `import`) for `webql-codegen-cli` directly with Node.JS:
 
 ```js
-import { generate } from '@graphql-codegen/cli';
+import { generate } from 'webql-codegen-cli';
 
 async function doSomething() {
   const generatedFiles = await generate(

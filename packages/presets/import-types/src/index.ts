@@ -1,5 +1,5 @@
-import { isUsingTypes, Types, CodegenPlugin } from '@graphql-codegen/plugin-helpers';
-import addPlugin from '@graphql-codegen/add';
+import { isUsingTypes, Types, CodegenPlugin } from 'webql-codegen-plugin-helpers';
+import addPlugin from 'webql-codegen-add';
 import { FragmentDefinitionNode } from 'graphql';
 
 export type ImportTypesConfig = {

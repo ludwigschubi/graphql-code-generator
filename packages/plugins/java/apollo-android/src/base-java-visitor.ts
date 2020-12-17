@@ -1,8 +1,8 @@
 import { Imports } from './imports';
-import { BaseVisitor, getBaseTypeNode, buildScalars } from '@graphql-codegen/visitor-plugin-common';
-import { getBaseType } from '@graphql-codegen/plugin-helpers';
+import { BaseVisitor, getBaseTypeNode, buildScalars } from 'webql-codegen-visitor-plugin-common';
+import { getBaseType } from 'webql-codegen-plugin-helpers';
 import { JavaApolloAndroidPluginConfig } from './plugin';
-import { JAVA_SCALARS } from '@graphql-codegen/java-common';
+import { JAVA_SCALARS } from 'webql-codegen-java-common';
 import {
   GraphQLSchema,
   isScalarType,

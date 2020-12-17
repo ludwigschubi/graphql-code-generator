@@ -1,4 +1,4 @@
-import { RawResolversConfig } from '@graphql-codegen/visitor-plugin-common';
+import { RawResolversConfig } from 'webql-codegen-visitor-plugin-common';
 
 /**
  * @description This plugin generates TypeScript signature for `resolve` functions of your GraphQL API.

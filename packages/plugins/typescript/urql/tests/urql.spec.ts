@@ -1,10 +1,10 @@
-import { validateTs } from '@graphql-codegen/testing';
+import { validateTs } from 'webql-codegen-testing';
 import { plugin } from '../src/index';
 import { parse, GraphQLSchema, buildClientSchema, buildASTSchema } from 'graphql';
 import gql from 'graphql-tag';
-import { Types, mergeOutputs } from '@graphql-codegen/plugin-helpers';
-import { plugin as tsPlugin } from '@graphql-codegen/typescript';
-import { plugin as tsDocumentsPlugin } from '@graphql-codegen/typescript-operations';
+import { Types, mergeOutputs } from 'webql-codegen-plugin-helpers';
+import { plugin as tsPlugin } from 'webql-codegen-typescript';
+import { plugin as tsDocumentsPlugin } from 'webql-codegen-typescript-operations';
 
 describe('urql', () => {
   let spyConsoleError: jest.SpyInstance;

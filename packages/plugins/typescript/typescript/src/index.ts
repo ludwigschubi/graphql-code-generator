@@ -1,4 +1,4 @@
-import { Types, PluginFunction } from '@graphql-codegen/plugin-helpers';
+import { Types, PluginFunction } from 'webql-codegen-plugin-helpers';
 import {
   parse,
   printSchema,

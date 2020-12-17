@@ -2,12 +2,12 @@
 
 
 
-<img alt="typescript-mongodb plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/typescript-mongodb?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="typescript-mongodb plugin version" src="https://img.shields.io/npm/v/webql-codegen-typescript-mongodb?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/typescript-mongodb
+    yarn add -D webql-codegen-typescript-mongodb
 :::
 
 ## API Reference

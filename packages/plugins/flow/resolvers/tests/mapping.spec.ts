@@ -1,9 +1,9 @@
-import '@graphql-codegen/testing';
+import 'webql-codegen-testing';
 import { schema } from '../../../typescript/resolvers/tests/common';
 import { plugin } from '../src';
 import { buildSchema } from 'graphql';
 import { validateFlow as validate } from '../../flow/tests/validate-flow';
-import { Types, mergeOutputs } from '@graphql-codegen/plugin-helpers';
+import { Types, mergeOutputs } from 'webql-codegen-plugin-helpers';
 
 describe('ResolversTypes', () => {
   it('Should build ResolversTypes object when there are no mappers', async () => {

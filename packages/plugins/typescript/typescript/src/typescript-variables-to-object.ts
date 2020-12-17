@@ -3,7 +3,7 @@ import {
   OperationVariablesToObject,
   NormalizedScalarsMap,
   ConvertNameFn,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { TypeNode, Kind } from 'graphql';
 
 export class TypeScriptOperationVariablesToObject extends OperationVariablesToObject {

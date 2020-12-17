@@ -9,7 +9,7 @@ import {
   DeclarationKind,
   normalizeAvoidOptionals,
   AvoidOptionalsConfig,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { TypeScriptPluginConfig } from './config';
 import autoBind from 'auto-bind';
 import {

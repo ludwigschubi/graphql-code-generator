@@ -1,4 +1,4 @@
-import { Types, PluginFunction } from '@graphql-codegen/plugin-helpers';
+import { Types, PluginFunction } from 'webql-codegen-plugin-helpers';
 import { GraphQLSchema, concatAST, visit } from 'graphql';
 import { capitalCase } from 'change-case';
 

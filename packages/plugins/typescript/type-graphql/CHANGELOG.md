@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-type-graphql
+# webql-codegen-typescript-type-graphql
 
 ## 1.18.1
 
@@ -18,8 +18,8 @@
 - a5d11eb5: GraphQL descriptions are now set in their corresponding TypeGraphQL decorator options
 - Updated dependencies [077cf064]
 - Updated dependencies [92d8f876]
-  - @graphql-codegen/typescript@1.17.11
-  - @graphql-codegen/visitor-plugin-common@1.17.16
+  - webql-codegen-typescript@1.17.11
+  - webql-codegen-visitor-plugin-common@1.17.16
 
 ## 1.17.8
 
@@ -29,6 +29,6 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
-  - @graphql-codegen/typescript@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8
+  - webql-codegen-typescript@1.17.8

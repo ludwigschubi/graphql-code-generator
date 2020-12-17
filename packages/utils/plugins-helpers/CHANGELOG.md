@@ -1,4 +1,4 @@
-# @graphql-codegen/plugin-helpers
+# webql-codegen-plugin-helpers
 
 ## 1.17.9
 

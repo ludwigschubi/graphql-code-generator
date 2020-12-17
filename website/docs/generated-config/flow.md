@@ -6,12 +6,12 @@ It generates types for your entire schema: types, input types, enum, interface, 
 
 
 
-<img alt="flow plugin version" src="https://img.shields.io/npm/v/@graphql-codegen/flow?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
+<img alt="flow plugin version" src="https://img.shields.io/npm/v/webql-codegen-flow?color=%23e15799&label=plugin&nbsp;version&style=for-the-badge"/>
 
 
     
 :::shell Using `yarn`
-    yarn add -D @graphql-codegen/flow
+    yarn add -D webql-codegen-flow
 :::
 
 ## API Reference

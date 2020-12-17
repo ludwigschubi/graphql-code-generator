@@ -1,5 +1,5 @@
 import inquirer from 'inquirer';
-import { Types } from '@graphql-codegen/plugin-helpers';
+import { Types } from 'webql-codegen-plugin-helpers';
 import { getQuestions } from './questions';
 import { guessTargets } from './targets';
 import { Answers, Tags } from './types';

@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-react-apollo
+# webql-codegen-typescript-react-apollo
 
 ## 2.0.7
 
@@ -9,8 +9,8 @@
 - Updated dependencies [89a6aa80]
 - Updated dependencies [f603b8f8]
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/visitor-plugin-common@1.17.15
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.15
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 2.0.6
 
@@ -21,8 +21,8 @@
 - ac067ea0: Improve output reliability by using separate import for gql tag, ensuring it will be there also for fragments when presets are used. This will bring back the separate import for gql tag (and remove the aliased one)
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8
 
 ## 2.0.5
 
@@ -30,7 +30,7 @@
 
 - 2c3f0728: prevent adding aliased gql tag when documentMode is set to "external"
 - Updated dependencies [4266a15f]
-  - @graphql-codegen/visitor-plugin-common@1.17.12
+  - webql-codegen-visitor-plugin-common@1.17.12
 
 ## 2.0.4
 
@@ -38,7 +38,7 @@
 
 - ee2b01a3: Fixes for issues with publish command
 - Updated dependencies [ee2b01a3]
-  - @graphql-codegen/visitor-plugin-common@1.17.11
+  - webql-codegen-visitor-plugin-common@1.17.11
 
 ## 2.0.3
 
@@ -46,7 +46,7 @@
 
 - 6cb9c96d: Fixes issues with previous release
 - Updated dependencies [6cb9c96d]
-  - @graphql-codegen/visitor-plugin-common@1.17.10
+  - webql-codegen-visitor-plugin-common@1.17.10
 
 ## 2.0.2
 
@@ -56,7 +56,7 @@
 - e6ad5398: apollo v3 should not use type import
 - bccfd28c: Use gql as-is instead of Apollo.gql for the generated graphql-tag, to make sure it's compatible with IDEs and prettier
 - Updated dependencies [bccfd28c]
-  - @graphql-codegen/visitor-plugin-common@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.9
 
 ## 2.0.1
 
@@ -64,7 +64,7 @@
 
 - ce3a5798: Publish minor version to include fixes for client-side-base-visitor, required to v2 of ts-react-apollo plugin (for unified apollo import)
 - Updated dependencies [ce3a5798]
-  - @graphql-codegen/visitor-plugin-common@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.8
 
 ## 2.0.0
 

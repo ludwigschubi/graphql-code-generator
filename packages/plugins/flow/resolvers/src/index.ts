@@ -1,6 +1,6 @@
 import { printSchemaWithDirectives } from '@graphql-tools/utils';
-import { RawResolversConfig } from '@graphql-codegen/visitor-plugin-common';
-import { Types, PluginFunction, addFederationReferencesToSchema } from '@graphql-codegen/plugin-helpers';
+import { RawResolversConfig } from 'webql-codegen-visitor-plugin-common';
+import { Types, PluginFunction, addFederationReferencesToSchema } from 'webql-codegen-plugin-helpers';
 import { parse, printSchema, visit, GraphQLSchema } from 'graphql';
 import { FlowResolversVisitor } from './visitor';
 
@@ -9,7 +9,7 @@ import { FlowResolversVisitor } from './visitor';
  *
  * It generates types for your entire schema: types, input types, enum, interface, scalar and union.
  *
- * This plugin requires you to use `@graphql-codegen/flow` as well, because it depends on it's types.
+ * This plugin requires you to use `webql-codegen-flow` as well, because it depends on it's types.
  */
 export interface RawFlowResolversConfig extends RawResolversConfig {}
 

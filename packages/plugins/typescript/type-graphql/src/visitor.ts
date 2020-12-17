@@ -1,4 +1,4 @@
-import { indent, DeclarationBlock, AvoidOptionalsConfig } from '@graphql-codegen/visitor-plugin-common';
+import { indent, DeclarationBlock, AvoidOptionalsConfig } from 'webql-codegen-visitor-plugin-common';
 import { TypeGraphQLPluginConfig } from './config';
 import autoBind from 'auto-bind';
 import {
@@ -17,7 +17,7 @@ import {
   TypeScriptOperationVariablesToObject,
   TypeScriptPluginParsedConfig,
   TsVisitor,
-} from '@graphql-codegen/typescript';
+} from 'webql-codegen-typescript';
 
 export type DecoratorConfig = {
   type: string;

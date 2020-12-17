@@ -1,4 +1,4 @@
-import { RawConfig } from '@graphql-codegen/visitor-plugin-common';
+import { RawConfig } from 'webql-codegen-visitor-plugin-common';
 
 /**
  * @description If you are migrating from <1.0, we created a new plugin called `typescript-compatibility` that generates backward compatibility for the `typescript-operations` and `typescript-react-apollo` plugins.

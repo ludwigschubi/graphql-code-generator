@@ -4,7 +4,7 @@ import { PluginOption, Tags } from './types';
 export const plugins: Array<PluginOption> = [
   {
     name: `TypeScript ${italic('(required by other typescript plugins)')}`,
-    package: '@graphql-codegen/typescript',
+    package: 'webql-codegen-typescript',
     value: 'typescript',
     pathInRepo: 'typescript/typescript',
     available: hasTag(Tags.typescript),
@@ -14,7 +14,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript Operations ${italic('(operations and fragments)')}`,
-    package: '@graphql-codegen/typescript-operations',
+    package: 'webql-codegen-typescript-operations',
     value: 'typescript-operations',
     pathInRepo: 'typescript/operations',
     available: tags => allOf(tags, Tags.browser, Tags.typescript),
@@ -23,7 +23,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript Resolvers ${italic('(strongly typed resolve functions)')}`,
-    package: '@graphql-codegen/typescript-resolvers',
+    package: 'webql-codegen-typescript-resolvers',
     value: 'typescript-resolvers',
     pathInRepo: 'typescript/resolvers',
     available: tags => allOf(tags, Tags.node, Tags.typescript),
@@ -32,7 +32,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `Flow ${italic('(required by other flow plugins)')}`,
-    package: '@graphql-codegen/flow',
+    package: 'webql-codegen-flow',
     value: 'flow',
     pathInRepo: 'flow/flow',
     available: hasTag(Tags.flow),
@@ -41,7 +41,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `Flow Operations ${italic('(operations and fragments)')}`,
-    package: '@graphql-codegen/flow-operations',
+    package: 'webql-codegen-flow-operations',
     value: 'flow-operations',
     pathInRepo: 'flow/operations',
     available: tags => allOf(tags, Tags.browser, Tags.flow),
@@ -50,7 +50,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `Flow Resolvers ${italic('(strongly typed resolve functions)')}`,
-    package: '@graphql-codegen/flow-resolvers',
+    package: 'webql-codegen-flow-resolvers',
     value: 'flow-resolvers',
     pathInRepo: 'flow/resolvers',
     available: tags => allOf(tags, Tags.node, Tags.flow),
@@ -59,7 +59,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript Apollo Angular ${italic('(typed GQL services)')}`,
-    package: '@graphql-codegen/typescript-apollo-angular',
+    package: 'webql-codegen-typescript-apollo-angular',
     value: 'typescript-apollo-angular',
     pathInRepo: 'typescript/apollo-angular',
     available: hasTag(Tags.angular),
@@ -68,7 +68,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript Vue Apollo ${italic('(typed composition functions)')}`,
-    package: '@graphql-codegen/typescript-vue-apollo',
+    package: 'webql-codegen-typescript-vue-apollo',
     value: 'typescript-vue-apollo',
     pathInRepo: 'typescript/vue-apollo',
     available: tags => allOf(tags, Tags.vue, Tags.typescript),
@@ -77,7 +77,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript React Apollo ${italic('(typed components and HOCs)')}`,
-    package: '@graphql-codegen/typescript-react-apollo',
+    package: 'webql-codegen-typescript-react-apollo',
     value: 'typescript-react-apollo',
     pathInRepo: 'typescript/react-apollo',
     available: tags => allOf(tags, Tags.react, Tags.typescript),
@@ -86,7 +86,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript Stencil Apollo ${italic('(typed components)')}`,
-    package: '@graphql-codegen/typescript-stencil-apollo',
+    package: 'webql-codegen-typescript-stencil-apollo',
     value: 'typescript-stencil-apollo',
     pathInRepo: 'typescript/stencil-apollo',
     available: hasTag(Tags.stencil),
@@ -95,7 +95,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript MongoDB ${italic('(typed MongoDB objects)')}`,
-    package: '@graphql-codegen/typescript-mongodb',
+    package: 'webql-codegen-typescript-mongodb',
     value: 'typescript-mongodb',
     pathInRepo: 'typescript/mongodb',
     available: tags => allOf(tags, Tags.node, Tags.typescript),
@@ -104,7 +104,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript GraphQL files modules ${italic('(declarations for .graphql files)')}`,
-    package: '@graphql-codegen/typescript-graphql-files-modules',
+    package: 'webql-codegen-typescript-graphql-files-modules',
     value: 'typescript-graphql-files-modules',
     pathInRepo: 'typescript/graphql-files-modules',
     available: tags => allOf(tags, Tags.browser, Tags.typescript),
@@ -113,7 +113,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `TypeScript GraphQL document nodes ${italic('(embedded GraphQL document)')}`,
-    package: '@graphql-codegen/typescript-document-nodes',
+    package: 'webql-codegen-typescript-document-nodes',
     value: 'typescript-document-nodes',
     pathInRepo: 'typescript/document-nodes',
     available: tags => allOf(tags, Tags.typescript),
@@ -122,7 +122,7 @@ export const plugins: Array<PluginOption> = [
   },
   {
     name: `Introspection Fragment Matcher ${italic('(for Apollo Client)')}`,
-    package: '@graphql-codegen/fragment-matcher',
+    package: 'webql-codegen-fragment-matcher',
     value: 'fragment-matcher',
     pathInRepo: 'other/fragment-matcher',
     available: hasTag(Tags.browser),

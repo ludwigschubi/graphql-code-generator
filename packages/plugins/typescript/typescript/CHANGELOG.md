@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript
+# webql-codegen-typescript
 
 ## 1.17.11
 
@@ -7,7 +7,7 @@
 - 077cf064: Fixed reading of enumValues config values
 - 92d8f876: Fixed unquoted numeric enum identifiers
 - Updated dependencies [92d8f876]
-  - @graphql-codegen/visitor-plugin-common@1.17.16
+  - webql-codegen-visitor-plugin-common@1.17.16
 
 ## 1.17.10
 
@@ -18,8 +18,8 @@
 - Updated dependencies [89a6aa80]
 - Updated dependencies [f603b8f8]
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/visitor-plugin-common@1.17.15
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.15
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 1.17.9
 
@@ -28,7 +28,7 @@
 - 07f9b1b2: Fix a bug caused numeric enum values defined in the GraphQLSchema to be printed incorrectly
 - Updated dependencies [07f9b1b2]
 - Updated dependencies [35f67120]
-  - @graphql-codegen/visitor-plugin-common@1.17.14
+  - webql-codegen-visitor-plugin-common@1.17.14
 
 ## 1.17.8
 
@@ -38,5 +38,5 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

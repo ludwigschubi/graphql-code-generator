@@ -1,5 +1,5 @@
 {
-  "name": "@graphql-codegen/fragment-matcher",
+  "name": "webql-codegen-fragment-matcher",
   "version": "1.17.8",
   "description": "graphql-code-generate plugin for generating fragments matcher introspection file",
   "repository": {
@@ -14,7 +14,7 @@
     "prepack": "bob prepack"
   },
   "dependencies": {
-    "@graphql-codegen/plugin-helpers": "^1.17.8",
+    "webql-codegen-plugin-helpers": "^1.17.8",
     "tslib": "~2.0.1"
   },
   "peerDependencies": {

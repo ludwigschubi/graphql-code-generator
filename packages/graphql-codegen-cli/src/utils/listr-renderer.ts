@@ -5,7 +5,7 @@ import ansiEscapes from 'ansi-escapes';
 import wrapAnsi from 'wrap-ansi';
 import { stripIndent } from 'common-tags';
 import { ListrTask } from 'listr';
-import { DetailedError, isDetailedError } from '@graphql-codegen/plugin-helpers';
+import { DetailedError, isDetailedError } from 'webql-codegen-plugin-helpers';
 import { Source } from 'graphql';
 import { debugLog, printLogs } from './debugging';
 

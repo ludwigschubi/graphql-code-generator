@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-document-nodes
+# webql-codegen-typescript-document-nodes
 
 ## 1.17.8
 ### Patch Changes
@@ -7,5 +7,5 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

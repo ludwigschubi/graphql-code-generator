@@ -9,9 +9,9 @@ import {
   getBaseTypeNode,
   buildScalars,
   ExternalParsedMapper,
-} from '@graphql-codegen/visitor-plugin-common';
+} from 'webql-codegen-visitor-plugin-common';
 import { JavaResolversPluginRawConfig } from './config';
-import { JAVA_SCALARS, JavaDeclarationBlock, wrapTypeWithModifiers } from '@graphql-codegen/java-common';
+import { JAVA_SCALARS, JavaDeclarationBlock, wrapTypeWithModifiers } from 'webql-codegen-java-common';
 import {
   GraphQLSchema,
   NamedTypeNode,

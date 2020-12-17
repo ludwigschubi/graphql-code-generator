@@ -1,4 +1,4 @@
-import { DetailedError, Types, isComplexPluginOutput, federationSpec } from '@graphql-codegen/plugin-helpers';
+import { DetailedError, Types, isComplexPluginOutput, federationSpec } from 'webql-codegen-plugin-helpers';
 import { visit, parse, DefinitionNode, Kind, print, NameNode } from 'graphql';
 import { executePlugin } from './execute-plugin';
 import {

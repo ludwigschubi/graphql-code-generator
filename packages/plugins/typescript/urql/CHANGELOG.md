@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-urql
+# webql-codegen-typescript-urql
 
 ## 2.0.2
 
@@ -10,8 +10,8 @@
 - Updated dependencies [89a6aa80]
 - Updated dependencies [f603b8f8]
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/visitor-plugin-common@1.17.15
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.15
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 2.0.1
 
@@ -21,8 +21,8 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8
 
 ## 2.0.0
 
@@ -45,4 +45,4 @@
 ### Patch Changes
 
 - Updated dependencies [4266a15f]
-  - @graphql-codegen/visitor-plugin-common@1.17.12
+  - webql-codegen-visitor-plugin-common@1.17.12

@@ -1,5 +1,5 @@
 import { executeCodegen } from '../codegen';
-import { Types, normalizeInstanceOrArray, normalizeOutputParam } from '@graphql-codegen/plugin-helpers';
+import { Types, normalizeInstanceOrArray, normalizeOutputParam } from 'webql-codegen-plugin-helpers';
 
 import isGlob from 'is-glob';
 import debounce from 'debounce';

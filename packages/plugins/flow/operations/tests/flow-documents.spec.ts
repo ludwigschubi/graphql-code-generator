@@ -1,5 +1,5 @@
-import { Types, mergeOutputs } from '@graphql-codegen/plugin-helpers';
-import '@graphql-codegen/testing';
+import { Types, mergeOutputs } from 'webql-codegen-plugin-helpers';
+import 'webql-codegen-testing';
 import { parse, buildClientSchema, buildSchema } from 'graphql';
 import { plugin } from '../src/index';
 import { validateFlow } from '../../flow/tests/validate-flow';

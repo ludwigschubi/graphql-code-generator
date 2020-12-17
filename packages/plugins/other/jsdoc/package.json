@@ -1,5 +1,5 @@
 {
-  "name": "@graphql-codegen/jsdoc",
+  "name": "webql-codegen-jsdoc",
   "version": "1.17.8",
   "description": "GraphQL Code Generator plugin for generating JSDoc based types for GraphQL queries, mutations, subscriptions and fragments",
   "repository": {
@@ -14,8 +14,8 @@
     "prepack": "bob prepack"
   },
   "dependencies": {
-    "@graphql-codegen/plugin-helpers": "^1.17.8",
-    "@graphql-codegen/visitor-plugin-common": "^1.17.13",
+    "webql-codegen-plugin-helpers": "^1.17.8",
+    "webql-codegen-visitor-plugin-common": "^1.17.13",
     "tslib": "~2.0.1"
   },
   "peerDependencies": {

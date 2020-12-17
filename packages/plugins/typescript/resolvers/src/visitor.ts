@@ -13,8 +13,8 @@ import {
   BaseResolversVisitor,
   getConfigValue,
   DeclarationKind,
-} from '@graphql-codegen/visitor-plugin-common';
-import { TypeScriptOperationVariablesToObject } from '@graphql-codegen/typescript';
+} from 'webql-codegen-visitor-plugin-common';
+import { TypeScriptOperationVariablesToObject } from 'webql-codegen-typescript';
 
 export const ENUM_RESOLVERS_SIGNATURE =
   'export type EnumResolverSignature<T, AllowedValues = any> = { [key in keyof T]?: AllowedValues };';

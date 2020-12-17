@@ -1,4 +1,4 @@
-# @graphql-codegen/config-schema
+# webql-codegen-config-schema
 
 ## 1.17.8
 ### Patch Changes

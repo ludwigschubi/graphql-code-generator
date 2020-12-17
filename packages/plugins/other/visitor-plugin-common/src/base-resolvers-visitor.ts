@@ -42,7 +42,7 @@ import {
 import { OperationVariablesToObject } from './variables-to-object';
 import { ParsedMapper, parseMapper, transformMappers, ExternalParsedMapper } from './mappers';
 import { parseEnumValues } from './enum-values';
-import { ApolloFederation, getBaseType } from '@graphql-codegen/plugin-helpers';
+import { ApolloFederation, getBaseType } from 'webql-codegen-plugin-helpers';
 
 export interface ParsedResolversConfig extends ParsedConfig {
   contextType: ParsedMapper;

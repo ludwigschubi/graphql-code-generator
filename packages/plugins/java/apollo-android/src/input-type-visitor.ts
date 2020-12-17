@@ -1,6 +1,6 @@
-import { getBaseTypeNode, indent, indentMultiline } from '@graphql-codegen/visitor-plugin-common';
+import { getBaseTypeNode, indent, indentMultiline } from 'webql-codegen-visitor-plugin-common';
 import { JavaApolloAndroidPluginConfig } from './plugin';
-import { JavaDeclarationBlock } from '@graphql-codegen/java-common';
+import { JavaDeclarationBlock } from 'webql-codegen-java-common';
 import {
   InputObjectTypeDefinitionNode,
   GraphQLSchema,

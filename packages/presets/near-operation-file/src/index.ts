@@ -1,10 +1,10 @@
-import { Types, CodegenPlugin } from '@graphql-codegen/plugin-helpers';
-import addPlugin from '@graphql-codegen/add';
+import { Types, CodegenPlugin } from 'webql-codegen-plugin-helpers';
+import addPlugin from 'webql-codegen-add';
 import { join } from 'path';
 import { FragmentDefinitionNode, buildASTSchema, GraphQLSchema } from 'graphql';
 import { appendExtensionToFilePath, defineFilepathSubfolder } from './utils';
 import { resolveDocumentImports, DocumentImportResolverOptions } from './resolve-document-imports';
-import { FragmentImport, ImportDeclaration, ImportSource } from '@graphql-codegen/visitor-plugin-common';
+import { FragmentImport, ImportDeclaration, ImportSource } from 'webql-codegen-visitor-plugin-common';
 
 export { resolveDocumentImports, DocumentImportResolverOptions };
 

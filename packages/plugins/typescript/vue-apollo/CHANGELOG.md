@@ -1,4 +1,4 @@
-# @graphql-codegen/typescript-vue-apollo
+# webql-codegen-typescript-vue-apollo
 
 ## 2.1.1
 
@@ -6,7 +6,7 @@
 
 - dc3a510b: Allow the vue-apollo plugin to write code to .tsx files
 - Updated dependencies [92d8f876]
-  - @graphql-codegen/visitor-plugin-common@1.17.16
+  - webql-codegen-visitor-plugin-common@1.17.16
 
 ## 2.1.0
 
@@ -20,8 +20,8 @@
 - Updated dependencies [89a6aa80]
 - Updated dependencies [f603b8f8]
 - Updated dependencies [da8bdd17]
-  - @graphql-codegen/visitor-plugin-common@1.17.15
-  - @graphql-codegen/plugin-helpers@1.17.9
+  - webql-codegen-visitor-plugin-common@1.17.15
+  - webql-codegen-plugin-helpers@1.17.9
 
 ## 2.0.0
 
@@ -36,7 +36,7 @@
 - d8f63b0d: Fix useMutation options. (#4540)
 - Updated dependencies [07f9b1b2]
 - Updated dependencies [35f67120]
-  - @graphql-codegen/visitor-plugin-common@1.17.14
+  - webql-codegen-visitor-plugin-common@1.17.14
 
 ## 1.17.8
 
@@ -46,5 +46,5 @@
 - 1d7c6432: Bump versions of @graphql-tools/ packages to fix issues with loading schemas and SDL comments
 - Updated dependencies [1d7c6432]
 - Updated dependencies [1d7c6432]
-  - @graphql-codegen/visitor-plugin-common@1.17.13
-  - @graphql-codegen/plugin-helpers@1.17.8
+  - webql-codegen-visitor-plugin-common@1.17.13
+  - webql-codegen-plugin-helpers@1.17.8

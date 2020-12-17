@@ -1,5 +1,5 @@
-import { Types } from '@graphql-codegen/plugin-helpers';
-import { generateFragmentImportStatement } from '@graphql-codegen/visitor-plugin-common';
+import { Types } from 'webql-codegen-plugin-helpers';
+import { generateFragmentImportStatement } from 'webql-codegen-visitor-plugin-common';
 import { buildASTSchema, buildSchema, parse, printSchema } from 'graphql';
 import { preset } from '../src/index';
 
