@@ -3,12 +3,12 @@ import { visit, GraphQLSchema, concatAST, Kind, FragmentDefinitionNode } from 'g
 import { LoadedFragment } from 'webql-codegen-visitor-plugin-common';
 import { WebQLVisitor } from './visitor';
 import { extname } from 'path';
-import { WebQLRawPluginConfig } from './config';
+import { ReactWebQLRawPluginConfig } from './config';
 
-export const plugin: PluginFunction<WebQLRawPluginConfig, Types.ComplexPluginOutput> = (
+export const plugin: PluginFunction<ReactWebQLRawPluginConfig, Types.ComplexPluginOutput> = (
   schema: GraphQLSchema,
   documents: Types.DocumentFile[],
-  config: WebQLRawPluginConfig
+  config: ReactWebQLRawPluginConfig
 ) => {
   const allAst = concatAST(documents.map(v => v.document));
 
@@ -36,18 +36,18 @@ export const plugin: PluginFunction<WebQLRawPluginConfig, Types.ComplexPluginOut
 export const validate: PluginValidateFn<any> = async (
   schema: GraphQLSchema,
   documents: Types.DocumentFile[],
-  config: WebQLRawPluginConfig,
+  config: ReactWebQLRawPluginConfig,
   outputFile: string
 ) => {
   if (config.withComponent === true) {
     if (extname(outputFile) !== '.tsx') {
       throw new Error(
-        `Plugin "typescript-react-apollo" requires extension to be ".tsx" when withComponent: true is set!`
+        `Plugin "typescript-react-webql" requires extension to be ".tsx" when withComponent: true is set!`
       );
     }
   } else {
     if (extname(outputFile) !== '.ts' && extname(outputFile) !== '.tsx') {
-      throw new Error(`Plugin "typescript-react-apollo" requires extension to be ".ts" or ".tsx"!`);
+      throw new Error(`Plugin "typescript-react-webql" requires extension to be ".ts" or ".tsx"!`);
     }
   }
 };

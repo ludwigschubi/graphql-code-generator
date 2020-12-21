@@ -85,6 +85,15 @@ export const plugins: Array<PluginOption> = [
     defaultExtension: '.tsx',
   },
   {
+    name: 'TypeScript React WebQL',
+    package: 'webql-codegen-typescript-react-webql',
+    value: 'typescript-react-webql',
+    pathInRepo: 'typescript/react-webql',
+    available: tags => allOf(tags, Tags.react, Tags.typescript),
+    shouldBeSelected: () => true,
+    defaultExtension: '.tsx',
+  },
+  {
     name: `TypeScript Stencil Apollo ${italic('(typed components)')}`,
     package: 'webql-codegen-typescript-stencil-apollo',
     value: 'typescript-stencil-apollo',

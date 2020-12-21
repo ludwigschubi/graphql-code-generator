@@ -31,6 +31,7 @@ module.exports = {
           'plugins/typed-document-node',
           'plugins/typescript-graphql-request',
           'plugins/typescript-react-apollo',
+          'plugins/typescript-react-webql',
           'plugins/typescript-vue-apollo',
           'plugins/typescript-apollo-angular',
           'plugins/typescript-stencil-apollo',

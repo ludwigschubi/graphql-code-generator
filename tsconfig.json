@@ -52,6 +52,7 @@
       "webql-codegen-typescript-operations": ["packages/plugins/typescript/operations/src/index.ts"],
       "webql-codegen-typescript-react-offix": ["packages/plugins/typescript/react-apollo-offix/src/index.ts"],
       "webql-codegen-typescript-react-apollo": ["packages/plugins/typescript/react-apollo/src/index.ts"],
+      "webql-codegen-typescript-react-webql": ["packages/plugins/typescript/react-webql/src/index.ts"],
       "webql-codegen-typescript-resolvers": ["packages/plugins/typescript/resolvers/src/index.ts"],
       "webql-codegen-typescript-stencil-apollo": ["packages/plugins/typescript/stencil-apollo/src/index.ts"],
       "webql-codegen-typescript-type-graphql": ["packages/plugins/typescript/type-graphql/src/index.ts"],

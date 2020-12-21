@@ -170,14 +170,16 @@ describe('init', () => {
     expect(output.plugins).toContainEqual('typescript');
     expect(output.plugins).toContainEqual('typescript-operations');
     expect(output.plugins).toContainEqual('typescript-react-apollo');
-    expect(output.plugins).toHaveLength(3);
+    expect(output.plugins).toContainEqual('typescript-react-webql');
+    expect(output.plugins).toHaveLength(4);
 
     // expected plugins
     expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript');
     expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-operations');
     expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-react-apollo');
+    expect(pkg.devDependencies).toHaveProperty('webql-codegen-typescript-react-webql');
     // should not have other plugins
-    expect(Object.keys(pkg.devDependencies)).toHaveLength(4);
+    expect(Object.keys(pkg.devDependencies)).toHaveLength(5);
   });
 
   it('should use stencil related plugins when @stencil/core is found', async () => {
@@ -505,37 +507,41 @@ describe('init', () => {
       const { selected, available } = getPlugins([Tags.react]);
 
       // available
-      expect(available).toHaveLength(8);
+      expect(available).toHaveLength(9);
       expect(available).toContainEqual('typescript');
       expect(available).toContainEqual('typescript-operations');
       expect(available).toContainEqual('typescript-react-apollo');
+      expect(available).toContainEqual('typescript-react-webql');
       expect(available).toContainEqual('typescript-graphql-files-modules');
       expect(available).toContainEqual('flow');
       expect(available).toContainEqual('flow-operations');
       expect(available).toContainEqual('fragment-matcher');
       // selected
-      expect(selected).toHaveLength(3);
+      expect(selected).toHaveLength(4);
       expect(selected).toContainEqual('typescript');
       expect(selected).toContainEqual('typescript-operations');
       expect(selected).toContainEqual('typescript-react-apollo');
+      expect(selected).toContainEqual('typescript-react-webql');
     });
 
     it('react + typescript', () => {
       const { selected, available } = getPlugins([Tags.react, Tags.typescript]);
 
       // available
-      expect(available).toHaveLength(6);
+      expect(available).toHaveLength(7);
       expect(available).toContainEqual('typescript');
       expect(available).toContainEqual('typescript-operations');
       expect(available).toContainEqual('typescript-react-apollo');
+      expect(available).toContainEqual('typescript-react-webql');
       expect(available).toContainEqual('typescript-graphql-files-modules');
       expect(available).toContainEqual('typescript-document-nodes');
       expect(available).toContainEqual('fragment-matcher');
       // selected
-      expect(selected).toHaveLength(3);
+      expect(selected).toHaveLength(4);
       expect(selected).toContainEqual('typescript');
       expect(selected).toContainEqual('typescript-operations');
       expect(selected).toContainEqual('typescript-react-apollo');
+      expect(selected).toContainEqual('typescript-react-webql');
     });
 
     it('react + flow', () => {

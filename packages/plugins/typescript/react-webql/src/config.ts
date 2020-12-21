@@ -5,7 +5,7 @@ import { RawClientSideBasePluginConfig } from 'webql-codegen-visitor-plugin-comm
  *
  * It extends the basic TypeScript plugins: `webql-codegen-typescript`, `webql-codegen-typescript-operations` - and thus shares a similar configuration.
  */
-export interface WebQLRawPluginConfig extends RawClientSideBasePluginConfig {
+export interface ReactWebQLRawPluginConfig extends RawClientSideBasePluginConfig {
   /**
    * @description Customize the output by enabling/disabling the generated Component (deprecated since Apollo-Client v3). For more details: https://www.apollographql.com/docs/react/api/react/components/
    * @default false
@@ -92,25 +92,25 @@ export interface WebQLRawPluginConfig extends RawClientSideBasePluginConfig {
    */
   withRefetchFn?: boolean;
   /**
-   * @description Customize the package where apollo-react common lib is loaded from.
-   * @default "@apollo/react-common"
+   * @description Customize the package where the graphql schema is loaded from.
+   * @default "./schema.json"
    */
-  reactQueryCommonImportFrom?: string;
+  webqlSchemaImportFrom?: string;
   /**
-   * @description Customize the package where apollo-react component lib is loaded from.
-   * @default "@apollo/react-components"
+   * @description Customize the identifier of the client.
+   * @default "WebQLClient"
    */
-  reactQueryComponentsImportFrom?: string;
+  webqlClientImportIdentifier?: string;
   /**
-   * @description Customize the package where apollo-react HOC lib is loaded from.
-   * @default "@apollo/react-hoc"
+   * @description Customize the package where webql-hooks lib is loaded from.
+   * @default "webql-hooks"
    */
-  reactQueryHocImportFrom?: string;
+  webqlClientHooksImportFrom?: string;
   /**
-   * @description Customize the package where apollo-react hooks lib is loaded from.
-   * @default "@apollo/react-hooks"
+   * @description Customize the identifier of the client.
+   * @default "webqlClient"
    */
-  reactQueryHooksImportFrom?: string;
+  webqlClientHooksIdentifier?: string;
   /**
    * @description You can specify a suffix that gets attached to the name of the generated component.
    * @default Component

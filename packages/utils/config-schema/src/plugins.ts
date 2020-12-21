@@ -87,6 +87,11 @@ export const relevantConfigurations: PluginConfig[] = [
     pluginName: 'typescript-react-apollo',
   },
   {
+    file: '../../plugins/typescript/react-webql/src/config.ts',
+    identifier: 'ReactWebQLRawPluginConfig',
+    pluginName: 'typescript-react-webql',
+  },
+  {
     file: '../../plugins/typescript/vue-apollo/src/config.ts',
     identifier: 'VueApolloRawPluginConfig',
     pluginName: 'typescript-vue-apollo',
