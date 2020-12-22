@@ -1,6 +1,6 @@
 {
   "name": "webql-codegen-typescript-react-webql",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "GraphQL Code Generator plugin for generating a ready-to-use React Components/HOC/Hooks based on GraphQL operations",
   "repository": {
     "type": "git",

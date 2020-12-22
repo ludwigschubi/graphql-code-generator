@@ -276,7 +276,7 @@ describe('WebQL React', () => {
 
       expect(content.prepend).toContain(`import { WebQLClient as Client } from 'webql-hooks';`);
       expect(content.prepend).toContain(`import * as WebQLClient from 'webql-hooks';`);
-      expect(content.prepend).toContain(`import schema from '../../../../../dev-test/githunt/schema.json';`);
+      expect(content.prepend).toContain(`import { schema } from '../../../../../dev-test/githunt/schema.json';`);
       expect(content.prepend).toContain(`const webQLClient = new Client(schema);`);
 
       // To make sure all imports are unified correctly under Apollo namespaced import

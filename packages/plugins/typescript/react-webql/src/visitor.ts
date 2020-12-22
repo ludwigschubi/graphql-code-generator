@@ -103,7 +103,7 @@ export class WebQLVisitor extends ClientSideBaseVisitor<ReactWebQLRawPluginConfi
   }
 
   private getWebQLSchemaImport(): string {
-    return `import schema from '${this.config.webqlSchemaImportFrom}';`;
+    return `import { schema } from '${this.config.webqlSchemaImportFrom}';`;
   }
 
   private getWebQLClient(): string {
@@ -310,7 +310,7 @@ export class WebQLVisitor extends ClientSideBaseVisitor<ReactWebQLRawPluginConfi
 
     const hookFns = [
       `export function use${operationName}(baseOptions?: ${this.getWebQLClientImportIdentifier()}.${operationType}HookOptions<${operationResultType}, ${operationVariablesTypes}>) {
-        return ${this.getWebQLClientHooksIdentifier()}.use${operationType}<${documentVariableName}, ${operationVariablesTypes}, ${operationResultType}>(${this.getDocumentNodeVariable(
+        return ${this.getWebQLClientHooksIdentifier()}.use${operationType}<typeof ${documentVariableName}, ${operationVariablesTypes}, ${operationResultType}>(${this.getDocumentNodeVariable(
         node,
         documentVariableName
       )}, baseOptions);
