@@ -369,7 +369,7 @@ export class WebQLVisitor extends ClientSideBaseVisitor<ReactWebQLRawPluginConfi
     switch (node.operation) {
       case 'query':
         this.imports.add(this.getWebQLClientImport(true));
-        return `export type ${componentResultType} = ${this.getWebQLClientImportIdentifier()}.QueryResult<${operationResultType}, ${operationVariablesTypes}>;`;
+        return `export type ${componentResultType} = ${this.getWebQLClientImportIdentifier()}.QueryResult<${operationResultType}>;`;
       case 'mutation':
         this.imports.add(this.getWebQLClientImport(true));
         return `export type ${componentResultType} = ${this.getWebQLClientImportIdentifier()}.MutationResult<${operationResultType}, ${operationVariablesTypes}>;`;
