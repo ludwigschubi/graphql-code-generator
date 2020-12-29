@@ -107,7 +107,15 @@ export class WebQLVisitor extends ClientSideBaseVisitor<ReactWebQLRawPluginConfi
   }
 
   private getWebQLClient(): string {
-    return `const ${this.getWebQLClientHooksIdentifier()} = new Client(schema);`;
+    return `export const ${this.getWebQLClientHooksIdentifier()} = new Client(schema);`;
+  }
+
+  private getWebQLClientProvider(): string {
+    return `export const ClientProvider: React.FC = ({ children }) => (
+  <WebQLClient.ClientProvider client={${this.getWebQLClientHooksIdentifier()}.queryClient}>
+    {children}
+  </WebQLClient.ClientProvider>
+);`;
   }
 
   // private getOmitDeclaration(): string {
@@ -302,15 +310,17 @@ export class WebQLVisitor extends ClientSideBaseVisitor<ReactWebQLRawPluginConfi
     });
 
     this.imports.add(this.getWebQLClientImport(true));
+    this.imports.add("import React from 'react';");
     this.imports.add(this.getWebQLClientImport(false));
     this.imports.add(this.getWebQLClientHooksImport(true));
     this.imports.add(this.getWebQLClientHooksImport(false));
     this.imports.add(this.getWebQLSchemaImport());
     this.imports.add(this.getWebQLClient());
+    this.imports.add(this.getWebQLClientProvider());
 
     const hookFns = [
       `export function use${operationName}(baseOptions?: ${this.getWebQLClientImportIdentifier()}.${operationType}HookOptions<${operationResultType}, ${operationVariablesTypes}>) {
-        return ${this.getWebQLClientHooksIdentifier()}.use${operationType}<typeof ${documentVariableName}, ${operationVariablesTypes}, ${operationResultType}>(${this.getDocumentNodeVariable(
+        return ${this.getWebQLClientHooksIdentifier()}.use${operationType}<${operationVariablesTypes}, ${operationResultType}>(${this.getDocumentNodeVariable(
         node,
         documentVariableName
       )}, baseOptions);

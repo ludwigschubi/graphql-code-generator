@@ -277,7 +277,7 @@ describe('WebQL React', () => {
       expect(content.prepend).toContain(`import { WebQLClient as Client } from 'webql-hooks';`);
       expect(content.prepend).toContain(`import * as WebQLClient from 'webql-hooks';`);
       expect(content.prepend).toContain(`import { schema } from '../../../../../dev-test/githunt/schema.json';`);
-      expect(content.prepend).toContain(`const webQLClient = new Client(schema);`);
+      expect(content.prepend).toContain(`export const webQLClient = new Client(schema);`);
 
       // To make sure all imports are unified correctly under Apollo namespaced import
       expect(content.content).toContain(` gql\``);
@@ -321,7 +321,7 @@ describe('WebQL React', () => {
 
       expect(
         ((await plugin(schema, [{ location: 'test-file.ts', document: ast }], {}, { outputFile: '' })) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery, NotificationsQueryQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery>');
       expect(
         ((await plugin(
           schema,
@@ -329,7 +329,7 @@ describe('WebQL React', () => {
           { dedupeOperationSuffix: false },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery, NotificationsQueryQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery>');
       expect(
         ((await plugin(
           schema,
@@ -337,7 +337,7 @@ describe('WebQL React', () => {
           { dedupeOperationSuffix: true },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQuery, NotificationsQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQuery>');
       expect(
         ((await plugin(
           schema,
@@ -345,7 +345,7 @@ describe('WebQL React', () => {
           { dedupeOperationSuffix: true },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQuery, NotificationsQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQuery>');
       expect(
         ((await plugin(
           schema,
@@ -353,7 +353,7 @@ describe('WebQL React', () => {
           { dedupeOperationSuffix: false },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQuery, NotificationsQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQuery>');
     });
 
     it(`tests for omitOperationSuffix`, async () => {
@@ -374,7 +374,7 @@ describe('WebQL React', () => {
 
       expect(
         ((await plugin(schema, [{ location: 'test-file.ts', document: ast }], {}, { outputFile: '' })) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery, NotificationsQueryQueryVariables>;');
+      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery>;');
       expect(
         ((await plugin(
           schema,
@@ -382,7 +382,7 @@ describe('WebQL React', () => {
           { omitOperationSuffix: false },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery, NotificationsQueryQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQueryQuery>');
       expect(
         ((await plugin(
           schema,
@@ -390,7 +390,7 @@ describe('WebQL React', () => {
           { omitOperationSuffix: true },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQuery, NotificationsQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQuery>');
       expect(
         ((await plugin(
           schema,
@@ -398,7 +398,7 @@ describe('WebQL React', () => {
           { omitOperationSuffix: true },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<Notifications, NotificationsVariables>');
+      ).toContain('WebQLClient.QueryResult<Notifications>');
       expect(
         ((await plugin(
           schema,
@@ -406,7 +406,7 @@ describe('WebQL React', () => {
           { omitOperationSuffix: false },
           { outputFile: '' }
         )) as any).content
-      ).toContain('WebQLClient.QueryResult<NotificationsQuery, NotificationsQueryVariables>');
+      ).toContain('WebQLClient.QueryResult<NotificationsQuery>');
     });
 
     it('should import WebqlClient from webqlClientHooksImportFrom config option', async () => {
@@ -743,12 +743,12 @@ query MyFeed {
 
       expect(content.content).toBeSimilarStringTo(`
 export function useFeedQuery(baseOptions?: WebQLClient.QueryHookOptions<FeedQuery, FeedQueryVariables>) {
-  return webQLClient.useQuery<FeedDocument, FeedQueryVariables, FeedQuery>(FeedDocument, baseOptions);
+  return webQLClient.useQuery<FeedQueryVariables, FeedQuery>(FeedDocument, baseOptions);
 }`);
 
       expect(content.content).toBeSimilarStringTo(`
 export function useSubmitRepositoryMutation(baseOptions?: WebQLClient.MutationHookOptions<SubmitRepositoryMutation, SubmitRepositoryMutationVariables>) {
-  return webQLClient.useMutation<SubmitRepositoryDocument, SubmitRepositoryMutationVariables, SubmitRepositoryMutation>(SubmitRepositoryDocument, baseOptions);
+  return webQLClient.useMutation<SubmitRepositoryMutationVariables, SubmitRepositoryMutation>(SubmitRepositoryDocument, baseOptions);
 }`);
       await validateTypeScript(content, schema, docs, {});
     });
@@ -792,12 +792,12 @@ export function useSubmitRepositoryMutation(baseOptions?: WebQLClient.MutationHo
 
       expect(content.content).toBeSimilarStringTo(`
 export function useFeedQuery(baseOptions?: WebQLClient.QueryHookOptions<FeedQuery, FeedQueryVariables>) {
-  return webQLClient.useQuery<FeedQueryDocument, FeedQueryVariables, FeedQuery>(FeedQueryDocument, baseOptions);
+  return webQLClient.useQuery<FeedQueryVariables, FeedQuery>(FeedQueryDocument, baseOptions);
 }`);
 
       expect(content.content).toBeSimilarStringTo(`
 export function useSubmitRepositoryMutation(baseOptions?: WebQLClient.MutationHookOptions<SubmitRepositoryMutation, SubmitRepositoryMutationVariables>) {
-  return webQLClient.useMutation<SubmitRepositoryMutationDocument, SubmitRepositoryMutationVariables, SubmitRepositoryMutation>(SubmitRepositoryMutationDocument, baseOptions);
+  return webQLClient.useMutation<SubmitRepositoryMutationVariables, SubmitRepositoryMutation>(SubmitRepositoryMutationDocument, baseOptions);
 }`);
       await validateTypeScript(content, schema, docs, {});
     });
@@ -1043,9 +1043,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
         outputFile: 'graphql.tsx',
       })) as Types.ComplexPluginOutput;
 
-      expect(content.content).toContain(
-        `export type TestQueryResult = WebQLClient.QueryResult<TestQuery, TestQueryVariables>;`
-      );
+      expect(content.content).toContain(`export type TestQueryResult = WebQLClient.QueryResult<TestQuery>;`);
       await validateTypeScript(content, schema, docs, {});
     });
 
@@ -1060,9 +1058,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
         }
       )) as Types.ComplexPluginOutput;
 
-      expect(content.content).not.toContain(
-        `export type TestQueryResult = WebQLClient.QueryResult<TestQuery, TestQueryVariables>;`
-      );
+      expect(content.content).not.toContain(`export type TestQueryResult = WebQLClient.QueryResult<TestQuery>;`);
       await validateTypeScript(content, schema, docs, {});
     });
 
@@ -1585,7 +1581,7 @@ export function useListenToCommentsSubscription(baseOptions?: Apollo.Subscriptio
       expect(content.prepend).toContain(`import * as Operations from 'path/to/documents';`);
       expect(content.content).toBeSimilarStringTo(`
       export function useTestQuery(baseOptions?: QueryObserverOptions<TestQuery>) {
-        return webQLClient.useQuery<typeof Operations.test, TestQueryVariables, TestQuery>(Operations.test, baseOptions);
+        return webQLClient.useQuery<TestQueryVariables, TestQuery>(Operations.test, baseOptions);
       }
       `);
       expect(content.content).toBeSimilarStringTo(`
